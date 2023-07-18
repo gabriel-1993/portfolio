@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+
+:root {
+  --naranja: hsl(35, 77%, 62%);
+  --rojo: hsl(5, 85%, 63%);
+  --blanco: hsl(36, 100%, 99%);
+  --celeste: hsl(233, 8%, 79%);
+  --azul1: hsl(236, 13%, 42%);
+  --background: hsl(225, 6%, 13%);
+  --amarillo: hsl(55, 100%, 50%);
+  --celesteOscuro: hsl(201, 100%, 36%);
+  --celesteClaro: hsl(190, 100%, 42%);
+  --bg-buttons: #5f4983;
+  --text-buttons: #f8faff;
+  --socials-buttons: rgb(168, 172, 179);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  border: none;
+}
+body {
+  background-color: var(--background);
+}
+
+header {
+  margin: auto;
+  height: 65px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.gaby {
+  color: var(--blanco);
+  font-size: 30px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.gaby:hover {
+  transform: scale(1.2);
+}
+
+/* MENU HAMBURGUESA Ocultar en Desktop  */
+
+.menu-icon1 {
+  display: none;
+}
+
+.navbar-list {
+  display: flex;
+  height: 100%;
+}
+nav a {
+  height: 100%;
+  cursor: pointer;
+  color: var(--blanco);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-family: sans-serif;
+  padding: 22px 7px;
+}
+nav a:hover {
+  background-color: hsl(0, 0%, 50%, 0.1);
+}
+/*GLASMORPHISM:
+  Fondo semitransparente que
+  añade un difuminado al fondo del div en el que se aplique. En este caso, lo usamos para que al abrir el menú
+  hamburguesa lo demás de la página se vea borroso abajo de este div de clase overlay.
+  */
+
+.overlay {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1; /*Para que quede por encima del resto de las cosas*/
+
+  /*Efecto de Glassmorphismo*/
+  background: --azul1, 0.5;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+
+/*Toggle para el overlay (para que funcione unicamente cuando abrimos carrito o menu hamburguesa.
+    Aclarar que funciona porque son elementos hermanos y overlay esta debajo de los dos inputs en el código.*/
+.show-overlay {
+  display: block;
+}
+
+/*****************************************************************************************************************/
+/* *******************************************contenedor general luego del header ********************************/
+section {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Cuadro central Hola,soy Gabriel Torrez...*/
+.divTitulo {
+  margin-top: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  height: 400px;
+}
+.h1Titulo {
+  font-size: 8rem;
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 600px;
+  /*Letras color en gradiente*/
+  background: linear-gradient(to right, #0077b6, #00b4d8);
+  color: transparent;
+  -webkit-background-clip: text;
+}
+.spanTitulo {
+  font-size: 23px;
+  color: var(--blanco);
+  font-weight: 600;
+  text-align: center;
+}
+/*Div y Botones para contacto o descargar Cv*/
+.divBtnsHero {
+  margin-top: 15px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.descargarCv {
+  height: 18px;
+}
+/*botones de Hero */
+.aHero {
+  padding: 21px 34px;
+  background-color: var(--bg-buttons);
+  color: var(--text-buttons);
+  font-size: 23px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.aHero:hover {
+  transform: scale(1.1);
+}
+
+/* UL Botones Hero: Github  Linkedin Cel*/
+.ulBtnsContacto {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  bottom: 0px;
+  left: 120px;
+}
+
+/* cada uno de los logos en el ul*/
+.fa-github,
+.fa-linkedin,
+.fa-square-phone {
+  font-size: 37px;
+  color: var(--socials-buttons);
+  transition: 0.3s;
+}
+
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-square-phone:hover {
+  color: var(--bg-buttons);
+  transform: scale(1.2);
+}
+
+/* linea vertical final*/
+.divDecoration {
+  height: 4rem;
+  width: 0px;
+  border: solid 5px gray;
+}
