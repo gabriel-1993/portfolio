@@ -244,11 +244,12 @@ section {
 .divHabilidades {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
+  gap: 4rem;
   width: 100%;
 }
 /*Titulos de habilidades*/
 .divTitulosHab {
+  margin-top: 10px;
   width: 100%;
   text-align: center;
 }
@@ -263,7 +264,7 @@ section {
 /*Div contenedor Educacion*/
 .divEducacion {
   margin-top: 20px;
-  border: solid red 2px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -294,7 +295,7 @@ section {
 .divTiempo ol li {
   width: 33%;
 }
-/*logo calendario y linea de tiempo*/
+/*div conenedor y individuales de logo calendario y linea de tiempo violeta*/
 .divLineal {
   display: flex;
   align-items: center;
@@ -302,9 +303,29 @@ section {
 }
 .fa-calendar-check {
   color: var(--texto);
-  font-size: 32px;
+  font-size: 34px;
 }
 .divDecoration2 {
   border: solid 2px var(--bg-buttons);
   width: 100%;
+}
+/* Textos de cards*/
+.divTiempo ol li :nth-child(2) {
+  margin-top: 15px;
+  font-size: 1.1rem;
+  line-height: 1rem;
+  color: var(--texto);
+  font-weight: 700;
+}
+.divTiempo ol li :nth-child(3) {
+  color: var(--texto-secundario);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+.divTiempo ol li :nth-child(4) {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--texto);
+  font-weight: 600;
 }
