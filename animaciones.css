@@ -1,0 +1,35 @@
+/* Slider infinito para las imagenes de habilidades*/
+
+.slider {
+  width: 65%;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider .slide-track {
+  display: flex;
+  animation: scroll 15s linear infinite;
+  -webkit-animation: scroll 15s linear infinite;
+  width: calc(200px * 10);
+  gap: 70px;
+}
+
+.slider .slide {
+  width: 170px;
+}
+
+.slider .slide img {
+  width: 100%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+    -webkit-animation: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-150px * 5));
+    -webkit-animation: translateX(calc(-150px * 5));
+  }
+}

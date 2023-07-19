@@ -200,11 +200,12 @@ section {
 
 /* Section Sobre mi , Habilidades, etc*/
 #SobreMi {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
-  gap: 1.25rem;
+  gap: 3rem;
 }
 .divTitulos,
 .divDown {
@@ -214,7 +215,7 @@ section {
 /*Titulo Sobre Mi, Habilidades, Educacion ,Mis Proyectos*/
 .text4x1 {
   color: var(--texto);
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 2.5rem;
 }
 /*Span que tienen debajo: quien soy, mis conocimientos,etc*/
@@ -226,8 +227,8 @@ section {
 .aContactame,
 .fa-arrow-pointer {
   color: var(--texto);
-  text-align: start;
-  font-size: 1.25rem;
+  text-align: left;
+  font-size: 1.4rem;
   line-height: 1.75rem;
 }
 .fontNegrita {
@@ -237,6 +238,9 @@ section {
 /* Seccion de Habilidades*/
 /* Divs contenedor  de habilidades */
 .divHabilidades {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
   width: 100%;
 }
 /*Titulos de habilidades*/
@@ -245,33 +249,3 @@ section {
   text-align: center;
 }
 /*Div contenedor de las cards de habilidades HTML CSS GIT ETC*/
-.divDownHab {
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-}
-/* Card de c/u de las habilidades */
-.divCardHab {
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-  width: 200px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.html {
-  background-image: url(./assets/html.png);
-}
-.css {
-  background-image: url(./assets/css.png);
-}
-.js {
-  background-image: url(./assets/js.png);
-}
-.java {
-  background-image: url(./assets/java.png);
-}
-.git {
-  background-image: url(./assets/git.png);
-}
