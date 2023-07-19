@@ -1,7 +1,7 @@
 /* Slider infinito para las imagenes de habilidades*/
 
 .slider {
-  width: 65%;
+  width: 100%;
   height: auto;
   margin: auto;
   overflow: hidden;
@@ -9,8 +9,8 @@
 
 .slider .slide-track {
   display: flex;
-  animation: scroll 18s linear infinite;
-  -webkit-animation: scroll 18s linear infinite;
+  animation: scroll 30s linear infinite;
+  -webkit-animation: scroll 30s linear infinite;
   width: calc(200px * 10);
   gap: 70px;
 }

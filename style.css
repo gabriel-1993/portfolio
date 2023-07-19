@@ -243,6 +243,8 @@ section {
 .divHabilidades {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 4rem;
   width: 100%;
 }
@@ -328,4 +330,47 @@ section {
   line-height: 1.25rem;
   color: var(--texto);
   font-weight: 600;
+}
+
+/* **************************************  Proyectos ********************************************/
+/*Div contenedor de cada una de las cards de proyectos*/
+.divContenedorProyectos {
+  width: 85%;
+}
+
+/*cada contenedor de cada proyecto*/
+.divProyecto {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  border: solid white 2px;
+}
+.imgProyecto {
+  height: 50%;
+  width: 62%;
+  border-radius: 7px;
+}
+.divTextProyecto {
+  margin-top: 60px;
+  border: solid red 2px;
+  width: 40%;
+}
+/*titulo del proyecto editado mas arriba en .text4x1 */
+/* parrafo descriptivo del proyecto*/
+.pProyecto {
+  margin-top: 20px;
+  color: var(--texto);
+  font-size: 1.1rem;
+  font-weight: 600;
+  background-color: var(--bg-buttons);
+  padding: 10px 14px;
+  border-radius: 10px;
+  position: absolute;
+  width: 40%;
+}
+/*logo enlaces proyecto github vercel*/
+.fa-globe,
+.githubproyect {
+  color: var(--text-buttons);
+  font-size: 20px;
 }
