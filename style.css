@@ -105,7 +105,6 @@ nav a:hover {
 section {
   display: flex;
   width: 100%;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -202,8 +201,8 @@ section {
 }
 
 /* Section Sobre mi , Habilidades, etc*/
-#SobreMi {
-  margin-top: 20px;
+#sectionSobreMi {
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
