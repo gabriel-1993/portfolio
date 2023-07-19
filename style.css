@@ -248,4 +248,42 @@ section {
   width: 100%;
   text-align: center;
 }
-/*Div contenedor de las cards de habilidades HTML CSS GIT ETC*/
+
+/* ***************** S L I D E R H A B I L I D A D E S : ************************/
+/*********************  esta en animaciones.css         *************************/
+
+/**********************************  Mi Trayectoria  ****************************************/
+/*Div contenedor Educacion*/
+.divEducacion {
+  border: solid red 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*Logo sombrerito*/
+.fa-graduation-cap {
+  color: var(--texto);
+  font-size: 30px;
+}
+.h3Educacion {
+  color: var(--texto);
+  font-size: 28px;
+}
+/*Div contenedor de la linea de tiempo*/
+.divTiempo ol {
+  display: flex;
+}
+/*logo calendario y linea de tiempo*/
+.divLineal {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.fa-calendar-check {
+  color: var(--texto);
+  font-size: 32px;
+}
+.divDecoration2 {
+  border: solid 1px var(--bg-buttons);
+  width: 300px;
+}
