@@ -300,18 +300,19 @@ section {
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-bottom: 15px;
 }
 .fa-calendar-check {
   color: var(--texto);
-  font-size: 34px;
+  font-size: 32px;
 }
 .divDecoration2 {
   border: solid 2px var(--bg-buttons);
   width: 100%;
 }
 /* Textos de cards*/
+
 .divTiempo ol li :nth-child(2) {
-  margin-top: 15px;
   font-size: 1.1rem;
   line-height: 1rem;
   color: var(--texto);
