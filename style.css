@@ -10,9 +10,11 @@
   --amarillo: hsl(55, 100%, 50%);
   --celesteOscuro: hsl(201, 100%, 36%);
   --celesteClaro: hsl(190, 100%, 42%);
-  --bg-buttons: #5f4983;
+  --bg-buttons: rgb(95, 73, 131);
   --text-buttons: #f8faff;
   --socials-buttons: rgb(168, 172, 179);
+  --texto: rgb(232, 234, 237);
+  --texto-secundario: rgb(154, 160, 166);
 }
 * {
   padding: 0;
@@ -61,7 +63,7 @@ nav a {
   height: 100%;
   cursor: pointer;
   color: var(--blanco);
-  font-size: 18px;
+  font-size: 17px;
   letter-spacing: 2px;
   font-weight: 300;
   font-family: sans-serif;
@@ -110,7 +112,7 @@ section {
 }
 /* Cuadro central Hola,soy Gabriel Torrez...*/
 .divTitulo {
-  margin-top: 80px;
+  margin-top: 70px;
   text-align: center;
   display: flex;
   justify-content: space-around;
@@ -118,7 +120,7 @@ section {
   height: 400px;
 }
 .h1Titulo {
-  font-size: 8rem;
+  font-size: 10rem;
   line-height: 1;
   font-weight: 600;
   letter-spacing: 1px;
@@ -127,6 +129,7 @@ section {
   background: linear-gradient(to right, #0077b6, #00b4d8);
   color: transparent;
   -webkit-background-clip: text;
+  animation: gradient 5s ease infinite;
 }
 .spanTitulo {
   font-size: 23px;
@@ -193,4 +196,82 @@ section {
   height: 4rem;
   width: 0px;
   border: solid 5px gray;
+}
+
+/* Section Sobre mi , Habilidades, etc*/
+#SobreMi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  gap: 1.25rem;
+}
+.divTitulos,
+.divDown {
+  text-align: center;
+  width: 85%;
+}
+/*Titulo Sobre Mi, Habilidades, Educacion ,Mis Proyectos*/
+.text4x1 {
+  color: var(--texto);
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+/*Span que tienen debajo: quien soy, mis conocimientos,etc*/
+.spanText {
+  color: var(--texto-secundario);
+}
+/*Parrafos */
+.pSobreMi,
+.aContactame,
+.fa-arrow-pointer {
+  color: var(--texto);
+  text-align: start;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.fontNegrita {
+  font-weight: 600;
+}
+
+/* Seccion de Habilidades*/
+/* Divs contenedor  de habilidades */
+.divHabilidades {
+  width: 100%;
+}
+/*Titulos de habilidades*/
+.divTitulosHab {
+  width: 100%;
+  text-align: center;
+}
+/*Div contenedor de las cards de habilidades HTML CSS GIT ETC*/
+.divDownHab {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+/* Card de c/u de las habilidades */
+.divCardHab {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.html {
+  background-image: url(./assets/html.png);
+}
+.css {
+  background-image: url(./assets/css.png);
+}
+.js {
+  background-image: url(./assets/js.png);
+}
+.java {
+  background-image: url(./assets/java.png);
+}
+.git {
+  background-image: url(./assets/git.png);
 }
