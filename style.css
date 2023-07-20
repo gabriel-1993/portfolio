@@ -27,6 +27,10 @@
 }
 body {
   background-color: var(--background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 header {
@@ -102,13 +106,19 @@ nav a:hover {
 
 /*****************************************************************************************************************/
 /* *******************************************contenedor general luego del header ********************************/
+/*para todos los sections width para monitores grandes*/
 section {
   display: flex;
-  width: 100%;
+  width: min(100%, 1350px);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+.sectionHero {
+  padding-bottom: 180px;
+}
+
 /* Cuadro central Hola,soy Gabriel Torrez...*/
 .divTitulo {
   margin-top: 70px;
@@ -186,9 +196,11 @@ section {
   transition: 0.3s;
 }
 
+/*agrego el fa globe para no repetir codido*/
 .fa-github:hover,
 .fa-linkedin:hover,
-.fa-square-phone:hover {
+.fa-square-phone:hover,
+.fa-globe:hover {
   color: var(--bg-buttons);
   transform: scale(1.2);
 }
@@ -202,7 +214,6 @@ section {
 
 /* Section Sobre mi , Habilidades, etc*/
 #sectionSobreMi {
-  margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -340,19 +351,18 @@ section {
 
 /*cada contenedor de cada proyecto*/
 .divProyecto {
+  margin-bottom: 100px;
+  height: 400px;
   margin-top: 2.5rem;
   display: flex;
-  justify-content: center;
-  border: solid white 2px;
+  justify-content: space-between;
 }
 .imgProyecto {
-  height: 50%;
-  width: 62%;
+  width: min(60%, 701px);
   border-radius: 7px;
 }
 .divTextProyecto {
-  margin-top: 60px;
-  border: solid red 2px;
+  margin-top: 50px;
   width: 40%;
 }
 /*titulo del proyecto editado mas arriba en .text4x1 */
@@ -360,17 +370,45 @@ section {
 .pProyecto {
   margin-top: 20px;
   color: var(--texto);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
+  line-height: 1.7rem;
   background-color: var(--bg-buttons);
-  padding: 10px 14px;
+  padding: 16px 14px;
   border-radius: 10px;
+  width: min(45%, 600px);
   position: absolute;
-  width: 40%;
+}
+/* UL contenedor de etiquetas HTML CSS JS*/
+.ulLenguajes {
+  margin-top: 195px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+/* ETIQUETAS  HTML CSS JS */
+.liLenguaje {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 4px;
+  color: var(--text-buttons);
+  z-index: 40;
+  background-color: var(--texto-secundario);
+}
+
+/*div de los logos github e internet*/
+.divEnlacesProyecto {
+  display: flex;
+  justify-content: end;
+  gap: 24px;
+  padding-right: 20px;
 }
 /*logo enlaces proyecto github vercel*/
 .fa-globe,
 .githubproyect {
   color: var(--text-buttons);
-  font-size: 20px;
+  font-size: 35px;
 }
+/* En la linea 200 estan los hover*/
