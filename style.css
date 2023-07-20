@@ -400,6 +400,7 @@ section {
 
 /*div de los logos github e internet*/
 .divEnlacesProyecto {
+  margin-top: 7px;
   display: flex;
   justify-content: end;
   gap: 24px;
