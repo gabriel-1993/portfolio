@@ -394,7 +394,6 @@ section {
   font-weight: 700;
   padding: 8px 4px;
   color: var(--text-buttons);
-  z-index: 40;
   background-color: var(--texto-secundario);
 }
 
@@ -413,3 +412,56 @@ section {
   font-size: 35px;
 }
 /* En la linea 200 estan los hover*/
+
+/*Seccion otros proyectos*/
+
+/*Div cards otross proyectos*/
+.divCardsOtrosProyectos {
+  width: 85%;
+  border: solid 2px #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/*Card individual de cada proyecto*/
+.cardOtroProyecto {
+  padding: 20px;
+  width: 33%;
+  border: solid 2px white;
+  border-radius: 5px;
+}
+.divIconos {
+  border: solid 1px blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fa-folder {
+  color: var(--bg-buttons);
+  font-size: 50px;
+}
+.cardOtroProyecto:nth-child(2) {
+  color: var(--text-buttons);
+}
+/*Parrafo de la card*/
+.pCardOtrosProyectos {
+  color: var(--text-buttons);
+}
+
+/*ul contenedor de las etiquetas HTML CSS*/
+.ulLenguajesOtros {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+}
+/*etiqueta individual HTML CSS*/
+.liLenguajeOtros {
+  background-color: var(--bg-buttons);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 4px;
+  color: var(--text-buttons);
+}
