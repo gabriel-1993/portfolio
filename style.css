@@ -423,7 +423,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   gap: 15px;
-  height: 800px;
+  padding-bottom: 50px;
 }
 /*Card individual de cada proyecto*/
 .cardOtroProyecto {
@@ -447,6 +447,11 @@ section {
 .fa-folder {
   color: var(--bg-buttons);
   font-size: 50px;
+}
+
+.fa-globe,
+.githubotrosProyectos {
+  color: var(--socials-buttons);
 }
 /*h3 card individual otros proyecto*/
 .h3OtroProyecto {
@@ -482,4 +487,79 @@ section {
   width: 70px;
   padding: 6px 4px;
   color: var(--text-buttons);
+}
+/* ********************************     SECTION CONTACTO      *************************** */
+/* section y contenedor de div text y div form*/
+#sectionContacto {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 85%;
+  border: solid white 1px;
+}
+
+.divContactoTexto {
+  width: 50%;
+  border: 2px yellow solid;
+}
+.h1Contacto {
+  color: var(--texto);
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.spanContactame {
+  padding: 10px;
+  width: 350px;
+  background-color: var(--bg-buttons);
+  border-radius: 7px;
+  color: var(--texto);
+  font-size: 3rem;
+}
+.pContacto {
+  color: var(--texto);
+  font-size: 18px;
+  padding: 19px 15px;
+}
+.divContactoForm {
+  width: 50%;
+  height: 60%;
+  border: 2px yellow solid;
+}
+/*div email y cel*/
+.divEmailCel {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+/*icono email y cel en contacto*/
+.fa-square-phone,
+.fa-envelope {
+  color: var(--texto);
+  font-size: 28px;
+  padding-right: 10px;
+}
+
+/*letra email*/
+.font-bold {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--texto);
+  display: flex;
+  align-items: center;
+}
+/*******************************  Formulario ********************************/
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.contacto-datos {
+  background-color: var(--background);
+  border: solid 1px var(--texto);
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 7px;
+  width: 100%;
 }
