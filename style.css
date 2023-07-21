@@ -417,22 +417,25 @@ section {
 
 /*Div cards otross proyectos*/
 .divCardsOtrosProyectos {
+  margin-top: 3rem;
   width: 85%;
-  border: solid 2px #fff;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  gap: 15px;
+  height: 100vh;
 }
 /*Card individual de cada proyecto*/
 .cardOtroProyecto {
+  width: 32%;
+  height: 300px;
   padding: 20px;
-  width: 33%;
-  border: solid 2px white;
+  border: 0.1px solid #e5e7eb1e;
+  box-shadow: 10px 10px 20px hsl(225, 7%, 11%);
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .divIconos {
-  border: solid 1px blue;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -441,7 +444,7 @@ section {
   color: var(--bg-buttons);
   font-size: 50px;
 }
-.cardOtroProyecto:nth-child(2) {
+.h3OtroProyecto {
   color: var(--text-buttons);
 }
 /*Parrafo de la card*/
