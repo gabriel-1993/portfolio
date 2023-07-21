@@ -351,7 +351,7 @@ section {
 
 /*cada contenedor de cada proyecto*/
 .divProyecto {
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   height: 400px;
   margin-top: 2.5rem;
   display: flex;
@@ -413,43 +413,55 @@ section {
 }
 /* En la linea 200 estan los hover*/
 
-/*Seccion otros proyectos*/
+/* ****************************************      Seccion otros proyectos         **********************************  */
 
 /*Div cards otross proyectos*/
 .divCardsOtrosProyectos {
-  margin-top: 3rem;
+  margin-top: 2rem;
   width: 85%;
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 15px;
-  height: 100vh;
+  height: 800px;
 }
 /*Card individual de cada proyecto*/
 .cardOtroProyecto {
   width: 32%;
-  height: 300px;
+  height: 370px;
   padding: 20px;
   border: 0.1px solid #e5e7eb1e;
   box-shadow: 10px 10px 20px hsl(225, 7%, 11%);
   border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
 }
 .divIconos {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+/* div con iconos de Github y Vercel*/
+.divEnlacesOtrosProyecto {
+  display: flex;
+  gap: 20px;
+}
 .fa-folder {
   color: var(--bg-buttons);
   font-size: 50px;
 }
+/*h3 card individual otros proyecto*/
 .h3OtroProyecto {
   color: var(--text-buttons);
+  font-size: 1.7rem;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 /*Parrafo de la card*/
 .pCardOtrosProyectos {
   color: var(--text-buttons);
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6rem;
 }
 
 /*ul contenedor de las etiquetas HTML CSS*/
@@ -458,13 +470,16 @@ section {
   justify-content: center;
   gap: 10px;
   width: 100%;
+  margin-top: 20px;
 }
 /*etiqueta individual HTML CSS*/
 .liLenguajeOtros {
+  text-align: center;
   background-color: var(--bg-buttons);
-  border-radius: 5px;
-  font-size: 12px;
+  border-radius: 7px;
+  font-size: 16px;
   font-weight: 700;
-  padding: 8px 4px;
+  width: 70px;
+  padding: 6px 4px;
   color: var(--text-buttons);
 }
