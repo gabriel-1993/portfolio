@@ -395,6 +395,7 @@ section {
   padding: 8px 4px;
   color: var(--text-buttons);
   background-color: var(--texto-secundario);
+  background-color: rgb(107, 114, 128);
 }
 
 /*div de los logos github e internet*/
@@ -449,7 +450,7 @@ section {
   font-size: 50px;
 }
 
-.fa-globe,
+.fa-globeProyectos,
 .githubotrosProyectos {
   color: var(--socials-buttons);
 }
@@ -500,7 +501,6 @@ section {
 
 .divContactoTexto {
   width: 50%;
-  border: 2px yellow solid;
 }
 .h1Contacto {
   color: var(--texto);
@@ -525,7 +525,6 @@ section {
 .divContactoForm {
   width: 50%;
   height: 60%;
-  border: 2px yellow solid;
 }
 /*div email y cel*/
 .divEmailCel {
@@ -534,11 +533,15 @@ section {
   gap: 7px;
 }
 /*icono email y cel en contacto*/
-.fa-square-phone,
+.fa-sq-ph2,
 .fa-envelope {
   color: var(--texto);
   font-size: 28px;
   padding-right: 10px;
+}
+.fa-sq-ph2:hover {
+  color: var(--texto);
+  transform: none;
 }
 
 /*letra email*/
@@ -558,8 +561,28 @@ form {
 .contacto-datos {
   background-color: var(--background);
   border: solid 1px var(--texto);
-  font-size: 1rem;
-  padding: 10px;
+  font-size: 0.9rem;
+  padding: 11px 8px;
   border-radius: 7px;
+  width: 100%;
+  outline: none;
+}
+.contacto-datos:active,
+.contacto-datos:focus {
+  border: solid 2px var(--texto);
+  color: var(--texto);
+}
+/*ingrese su mensaje */
+textarea {
+  height: 150px;
+}
+
+/*boton enviar */
+.submit-contacto {
+  background-color: var(--bg-buttons);
+  font-size: 1.5rem;
+  border-radius: 7px;
+  padding: 19px 0px;
+  color: var(--texto);
   width: 100%;
 }
