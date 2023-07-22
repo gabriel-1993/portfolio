@@ -12,6 +12,8 @@ const overlay = document.querySelector(".overlay");
 const logoResponsive = document.querySelector(".menu-icon1");
 // Logo menu responsive X para cerrarlo
 const logoResponsiveX = document.querySelector(".menu-icon2");
+//span cartel contactame en form
+const spanContactame = document.querySelector(".spanContactame");
 
 // FUNCIONES ************************************************
 //Funcion para actualizar logo cuando se abra o cierre el menu responsive
@@ -54,11 +56,35 @@ const closeMenuOnClickOut = (e) => {
   overlay.classList.remove("show-overlay");
   estadoMenuResp();
 };
+//Funcion maquina de escribir
+const maquinaEscribir = (text = "", tiempo = 200, etiqueta = "") => {
+  let arrayCaracteres = text.split("");
+  etiqueta.innerHTML = "";
+  let i = 0;
+  let j = text.length;
+  let escribir = setInterval(function () {
+    if (i === arrayCaracteres.length) {
+      //retrocedes
+      etiqueta.innerHTML = text.substring(0, j);
+      j--;
+      if (j === 0) {
+        etiqueta.innerHTML = "";
+        i = 0;
+        j = text.length;
+      }
+    } else {
+      etiqueta.innerHTML += arrayCaracteres[i];
+      i++;
+    }
+  }, tiempo);
+};
+
 // Puerta de entrada
 const init = () => {
   abrirMenu.addEventListener("click", menuRespOnOff);
   barsMenu.addEventListener("click", closeOnClick);
   window.addEventListener("scroll", closeMenuOnScroll);
   overlay.addEventListener("click", closeMenuOnClickOut);
+  maquinaEscribir("Contactáme.  ", 200, spanContactame);
 };
 init();
