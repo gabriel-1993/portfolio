@@ -509,12 +509,23 @@ section {
   gap: 7px;
 }
 .spanContactame {
-  padding: 10px;
-  width: 350px;
+  height: 85px;
+  width: 390px;
+  display: flex;
+  align-items: center;
+  padding-left: 13px;
   background-color: var(--bg-buttons);
   border-radius: 7px;
   color: var(--texto);
-  font-size: 3rem;
+  font-size: 3.3rem;
+}
+/* punto de insercion o | barra a la derecha mientras se va escribiendo*/
+.spanInsercion {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background-color: var(--background);
+  border-left: 2px solid var(--texto);
 }
 .pContacto {
   color: var(--texto);

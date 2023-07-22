@@ -14,6 +14,8 @@ const logoResponsive = document.querySelector(".menu-icon1");
 const logoResponsiveX = document.querySelector(".menu-icon2");
 //span cartel contactame en form
 const spanContactame = document.querySelector(".spanContactame");
+//Capturo formulario
+const formulario = document.querySelector("#form");
 
 // FUNCIONES ************************************************
 //Funcion para actualizar logo cuando se abra o cierre el menu responsive
@@ -57,7 +59,7 @@ const closeMenuOnClickOut = (e) => {
   estadoMenuResp();
 };
 //Funcion maquina de escribir
-const maquinaEscribir = (text = "", tiempo = 200, etiqueta = "") => {
+const maquinaEscribir = (text = "", tiempo = 160, etiqueta = "") => {
   let arrayCaracteres = text.split("");
   etiqueta.innerHTML = "";
   let i = 0;
@@ -79,12 +81,19 @@ const maquinaEscribir = (text = "", tiempo = 200, etiqueta = "") => {
   }, tiempo);
 };
 
+/*Controlar submit del formulario*/
+
+function controlSubmit(event) {
+  event.preventDefault();
+}
+
 // Puerta de entrada
 const init = () => {
   abrirMenu.addEventListener("click", menuRespOnOff);
   barsMenu.addEventListener("click", closeOnClick);
   window.addEventListener("scroll", closeMenuOnScroll);
   overlay.addEventListener("click", closeMenuOnClickOut);
-  maquinaEscribir("Contactáme.  ", 200, spanContactame);
+  maquinaEscribir("Contactáme.  ", 160, spanContactame);
+  formulario.addEventListener("submit", controlSubmit);
 };
 init();
