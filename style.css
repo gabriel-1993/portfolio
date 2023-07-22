@@ -605,3 +605,10 @@ textarea {
 .submit-contacto:hover {
   transform: scale(1.05);
 }
+
+/*oculto enlace a que permite enviar el form a mi correo(HTML: esta luego de cerrar el form) */
+/*el click se da automaticamente a travez de J S */
+#emailJS {
+  opacity: 0;
+  cursor: default;
+}

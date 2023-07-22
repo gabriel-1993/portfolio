@@ -16,6 +16,8 @@ const logoResponsiveX = document.querySelector(".menu-icon2");
 const spanContactame = document.querySelector(".spanContactame");
 //Capturo formulario
 const formulario = document.querySelector("#form");
+//capturar enlace <a> que envia form al correo(permitira darle un click automatico)
+const btnEnviarForm = document.querySelector("#emailJS");
 
 // FUNCIONES ************************************************
 //Funcion para actualizar logo cuando se abra o cierre el menu responsive
@@ -85,6 +87,15 @@ const maquinaEscribir = (text = "", tiempo = 160, etiqueta = "") => {
 
 function controlSubmit(event) {
   event.preventDefault();
+  const form2 = new FormData(this);
+  console.log(form2.get("name"));
+  btnEnviarForm.setAttribute(
+    "href",
+    `mailto:gabrieltorrez@gmail.com?subject=${form.get("name")}${form.get(
+      "correo"
+    )}&body=${form.get("mensaje")}`
+  );
+  btnEnviarForm.click();
 }
 
 // Puerta de entrada
