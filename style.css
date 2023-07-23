@@ -52,8 +52,7 @@ header {
 .gaby:hover {
   transform: scale(1.2);
 }
-
-/* MENU HAMBURGUESA Ocultar en Desktop  */
+/* ***************************************** MENU HAMBURGUESA Ocultar en Desktop *********************************** */
 
 .menu-icon1 {
   display: none;
@@ -76,7 +75,8 @@ nav a {
 nav a:hover {
   background-color: hsl(0, 0%, 50%, 0.1);
 }
-/*GLASMORPHISM:
+/*  *******************************************     GLASMORPHISM:   *********************************************
+
   Fondo semitransparente que
   añade un difuminado al fondo del div en el que se aplique. En este caso, lo usamos para que al abrir el menú
   hamburguesa lo demás de la página se vea borroso abajo de este div de clase overlay.
@@ -98,15 +98,16 @@ nav a:hover {
   display: none;
 }
 
-/*Toggle para el overlay (para que funcione unicamente cuando abrimos carrito o menu hamburguesa.
-    Aclarar que funciona porque son elementos hermanos y overlay esta debajo de los dos inputs en el código.*/
+/*Toggle para el overlay (para que funcione unicamente cuando abrimos menu hamburguesa.
+    Aclarar que funciona porque son elementos hermanos y overlay esta debajo en el código.*/
 .show-overlay {
   display: block;
 }
 
 /*****************************************************************************************************************/
 /* *******************************************contenedor general luego del header ********************************/
-/*para todos los sections width para monitores grandes*/
+
+/*para todos los sections width fijo para mantener centrado en monitores grandes*/
 section {
   display: flex;
   width: min(100%, 1350px);
@@ -120,11 +121,48 @@ section {
   justify-content: center;
   flex-direction: row;
 }
+/* barra vertical a la izquierda del hero*/
 .divUlBtns {
   padding-top: 360px;
   display: flex;
   align-items: flex-end;
 }
+
+/* UL Botones Hero: Github  Linkedin Cel*/
+.ulBtnsContacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  bottom: 0px;
+  left: 120px;
+}
+
+/* cada uno de los logos en el ul*/
+.fa-github,
+.fa-linkedin,
+.fa-square-phone {
+  font-size: 37px;
+  color: var(--socials-buttons);
+  transition: 0.3s;
+}
+
+/*agrego el fa globe para no repetir codido*/
+.fa-github:hover,
+.fa-linkedin:hover,
+.fa-square-phone:hover,
+.fa-globe:hover {
+  color: var(--bg-buttons);
+  transform: scale(1.2);
+}
+
+/* linea vertical final*/
+.divDecoration {
+  height: 4rem;
+  width: 0px;
+  border: solid 5px var(--socials-buttons);
+}
+/* contiene el saludo y el div de los botones*/
 .contenedorHero {
   padding-right: 30px;
   height: 563px;
@@ -133,7 +171,7 @@ section {
   justify-content: center;
 }
 
-/* Cuadro central Hola,soy Gabriel Torrez...*/
+/* Card central Hola,soy Gabriel Torrez...*/
 .divTitulo {
   margin-top: 30px;
   text-align: center;
@@ -189,42 +227,7 @@ section {
   transform: scale(1.1);
 }
 
-/* UL Botones Hero: Github  Linkedin Cel*/
-.ulBtnsContacto {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8px;
-  bottom: 0px;
-  left: 120px;
-}
-
-/* cada uno de los logos en el ul*/
-.fa-github,
-.fa-linkedin,
-.fa-square-phone {
-  font-size: 37px;
-  color: var(--socials-buttons);
-  transition: 0.3s;
-}
-
-/*agrego el fa globe para no repetir codido*/
-.fa-github:hover,
-.fa-linkedin:hover,
-.fa-square-phone:hover,
-.fa-globe:hover {
-  color: var(--bg-buttons);
-  transform: scale(1.2);
-}
-
-/* linea vertical final*/
-.divDecoration {
-  height: 4rem;
-  width: 0px;
-  border: solid 5px var(--socials-buttons);
-}
-
-/* Section Sobre mi , Habilidades, etc*/
+/* ********************************************   Section Sobre mi , Habilidades, etc********************************* */
 #sectionSobreMi {
   margin-top: 75px;
   display: flex;
@@ -233,6 +236,7 @@ section {
   align-content: center;
   gap: 3rem;
 }
+
 .divTitulos,
 .divDown {
   text-align: center;
@@ -262,7 +266,7 @@ section {
   font-weight: 600;
 }
 
-/* Seccion de Habilidades*/
+/* *****************************************     Seccion de Habilidades    ******************************************* */
 /* Divs contenedor  de habilidades */
 .divHabilidades {
   display: flex;
@@ -279,10 +283,11 @@ section {
   text-align: center;
 }
 
-/* ***************** S L I D E R H A B I L I D A D E S : ************************/
-/*********************  esta en animaciones.css         *************************/
+/* ************************************* S L I D E R H A B I L I D A D E S : ***********************************/
+/***************************************  esta en el archivo de animaciones.css*********************************/
 
-/**********************************  Mi Trayectoria  ****************************************/
+/**************************************************  Mi Trayectoria  **********************************************/
+
 .divTrayectoria {
   width: 85%;
 }
@@ -356,7 +361,7 @@ section {
   font-weight: 600;
 }
 
-/* **************************************  Proyectos ********************************************/
+/* ********************************************************  Proyectos ***************************************************/
 /*Div contenedor de cada una de las cards de proyectos*/
 .divContenedorProyectos {
   width: 85%;
@@ -502,7 +507,7 @@ section {
   padding: 6px 4px;
   color: var(--text-buttons);
 }
-/* ********************************     SECTION CONTACTO      *************************** */
+/* ****************************************************     SECTION CONTACTO      *********************************** */
 /* section y contenedor de div text y div form*/
 #sectionContacto {
   display: flex;
@@ -578,7 +583,7 @@ section {
   display: flex;
   align-items: center;
 }
-/*******************************  Formulario ********************************/
+/*********************************************************  Formulario *******************************************/
 form {
   display: flex;
   flex-direction: column;
@@ -626,7 +631,7 @@ textarea {
   cursor: default;
 }
 
-/* *****************************  footer ***************************** */
+/* *********************************************************  footer ********************************************* */
 footer {
   width: 100%;
   height: 55vh;
@@ -678,4 +683,17 @@ footer p {
   padding-left: 107px;
   text-align: start;
   width: 100%;
+}
+
+/* flecha fija para ir scrollear al principio de la web*/
+.fa-chevron-up {
+  color: var(--texto);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  border-radius: 50%;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 1rem;
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
 }
