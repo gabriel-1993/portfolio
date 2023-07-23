@@ -100,7 +100,6 @@ header {
 }
 
 .navbar-list {
-  border: white 1px solid;
   display: flex;
   height: 100%;
 }
@@ -166,7 +165,6 @@ section {
 }
 /* barra vertical a la izquierda del hero*/
 .divUlBtns {
-  border: solid white 1px;
   height: 99%;
   display: flex;
   align-items: flex-end;
