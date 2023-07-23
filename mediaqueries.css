@@ -8,16 +8,32 @@
 }
 @media (max-width: 992px) {
   header {
-    width: 90%;
+    width: 100%;
+  }
+
+  #sectionHero {
+    flex-direction: column-reverse;
+  }
+
+  .contenedorHero {
+    padding-right: 0px;
+    height: 463px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  /* GITHUB VERCEL TELEFONO*/
+  .divUlBtns .ulBtnsContacto {
+    flex-direction: row;
+  }
+
+  /*oculto el div vertical gris */
+  .divDecoration {
+    display: none;
   }
 }
-
 /* **************************************************************************************************** */
 @media (max-width: 767px) {
-  header {
-    justify-content: space-between;
-    padding: 0px 20px;
-  }
   /* menu que se muestra debajo del header para menu hamburguesa */
   .navbar-list {
     position: absolute;
@@ -45,100 +61,74 @@
     order: 2;
     cursor: pointer;
   }
-
   /* menu hamburguesa, le quitamos el none aplicado en desktop para mostrarlo*/
   .open-menu {
     display: flex;
   }
+  #sectionHero {
+    height: 85vh;
+  }
 
-  .divContUp {
+  .contenedorHero {
+    padding: 0px;
+    height: 390px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  /* contenedor del saludo en general*/
+  .divTitulo {
+    margin-top: 0px;
+    height: 360px;
+  }
+  /*hola ...*/
+  .spanTitulo {
+    font-weight: 100;
+    font-size: 1.1rem;
+    margin-top: 12px;
+  }
+  /*Gabriel Torrez*/
+  .h1Titulo {
+    font-size: 4rem;
+    width: 300px;
+    line-height: 0.9;
+    font-weight: 600;
+  }
+  /* contenedor contactame descargarCv*/
+  .divBtnsHero {
+    margin-top: 18px;
+    height: auto;
+    width: 250px;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /*btns  contactame descargarCv*/
+  .aHero {
     display: flex;
-    flex-direction: column;
-    width: 95%;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    height: 60px;
+    width: 240px;
+    font-size: 20px;
+    border-radius: 5px;
   }
-  .div1 {
-    width: 100%;
-  }
-  /* cambio imagen a mobile */
-  .div1__img {
-    background-image: url(./frontendMentor/assets/images/image-web-3-mobile.jpg);
-  }
-  /* div del texto en columna */
-  .div1__text {
-    flex-direction: column;
-  }
-  /* agrego width al h1 estaba en 50% */
-  .div1__h1,
-  .div1__h1 h1 {
-    width: 100%;
-  }
-  /* agrego width al P estaba en 50% */
-  .div1__p,
-  .div1__p p {
-    width: 100%;
-  }
-  button {
-    margin: 20px 0px;
-    width: 55%;
+  .contactameLogo {
+    height: 20px;
   }
 
-  .div2 h2 {
-    text-align: unset;
-    margin-bottom: 10px;
-  }
-
-  .divCardsNew {
-    flex-direction: column;
+  /* div contenedor del github vercel y contacto vertical en el hero*/
+  .divUlBtns {
+    border: none;
+    margin-top: 0px;
+    height: auto;
     padding: 0px;
   }
-  .divCardsNew div {
-    width: 100%;
-    padding: 34px;
-    height: auto;
-    align-items: unset;
-  }
-  /* titulo de las cardsNew */
-  .divCardsNew div h4 {
-    font-size: 1.3rem;
-    text-align: unset;
-  }
-  /* p de las cards lado azul oscuro */
-  .div2 div p {
-    text-align: unset;
-    font-size: 1rem;
-  }
 
-  .divBorder {
-    border-top: solid 1px var(--azul1);
-    border-bottom: solid 1px var(--azul1);
-    border-left: none;
-    border-right: none;
-  }
+  .ulBtnsContacto {
+    display: flex;
 
-  /* contenedor 3 cards 01 02 03 */
-  .divContDown {
-    margin-top: 12px;
-    flex-direction: column;
-    gap: 15px;
-    width: 95%;
-  }
-  .cardDown {
-    width: 100%;
-    height: 150px;
-  }
-
-  /*01 02 03 de cada cards  */
-  .divContDown .cardDown .textCard span {
-    font-size: 1.7rem;
-  }
-  .textCard {
-    justify-content: space-around;
-    gap: 2px;
-  }
-  .textCard h4 {
-    font-size: 1rem;
-  }
-  .textCard p {
-    line-height: 22px;
+    gap: 20px;
+    bottom: 0;
+    left: 0;
   }
 }

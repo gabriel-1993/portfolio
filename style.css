@@ -38,12 +38,13 @@ body {
 }
 
 header {
+  width: min(100%, 1350px);
   margin: auto;
   height: 65px;
-  width: 77%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0px 30px;
 }
 /*div con Gaby y iconos resp lado izquierdo*/
 .divLeft {
@@ -54,7 +55,8 @@ header {
 }
 .gaby {
   color: var(--texto);
-  font-size: 30px;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
   font-weight: 800;
   cursor: pointer;
   transition: 0.3s;
@@ -73,7 +75,7 @@ header {
 .fa-bars {
   display: none;
   color: var(--texto);
-  font-size: 25px;
+  font-size: 2rem;
 }
 /*icono cerrar menu resp*/
 .fa-xmark {
@@ -88,6 +90,9 @@ header {
   font-size: 22px;
   padding: 7px 10px;
   border-radius: 50%;
+}
+.fa-sun {
+  color: #9eff49;
 }
 .fa-moon:hover,
 .fa-sun:hover {
@@ -154,13 +159,15 @@ section {
 }
 
 #sectionHero {
+  height: 95vh;
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 /* barra vertical a la izquierda del hero*/
 .divUlBtns {
-  padding-top: 360px;
+  border: solid white 1px;
+  height: 99%;
   display: flex;
   align-items: flex-end;
 }
@@ -172,7 +179,7 @@ section {
   align-items: center;
   gap: 8px;
   bottom: 0px;
-  left: 120px;
+  left: 50px;
 }
 
 /* cada uno de los logos en el ul*/
@@ -195,7 +202,7 @@ section {
 
 /* linea vertical final*/
 .divDecoration {
-  height: 3rem;
+  height: 4rem;
   width: 0px;
   border: solid 4px var(--socials-buttons);
 }
@@ -211,8 +218,9 @@ section {
 /* Card central Hola,soy Gabriel Torrez...*/
 .divTitulo {
   margin-top: 30px;
-  text-align: center;
   display: flex;
+  text-align: center;
+  align-items: center;
   flex-direction: column;
   height: 450px;
 }
