@@ -90,8 +90,9 @@
   /*Gabriel Torrez*/
   .h1Titulo {
     margin-top: 6px;
-    font-size: 4.7rem;
+    font-size: 6rem;
     width: 300px;
+    border: solid yellow 2px;
     line-height: 0.9;
     font-weight: 600;
   }
