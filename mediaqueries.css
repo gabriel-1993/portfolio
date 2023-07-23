@@ -92,7 +92,6 @@
     margin-top: 6px;
     font-size: 5.3rem;
     width: 380px;
-    border: solid yellow 2px;
     line-height: 0.9;
     font-weight: 600;
   }
@@ -131,8 +130,8 @@
   }
 
   .ulBtnsContacto {
+    margin-top: 10px;
     display: flex;
-
     gap: 20px;
     bottom: 0;
     left: 0;
