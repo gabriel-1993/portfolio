@@ -117,8 +117,8 @@ section {
 
 .sectionHero {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-direction: row;
 }
 .divUlBtns {
   padding-top: 360px;
