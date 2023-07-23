@@ -116,23 +116,35 @@ section {
 }
 
 .sectionHero {
-  padding-bottom: 180px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.divUlBtns {
+  padding-top: 360px;
+  display: flex;
+  align-items: flex-end;
+}
+.contenedorHero {
+  padding-right: 30px;
+  height: 563px;
+  width: 75%;
+  display: flex;
+  justify-content: center;
 }
 
 /* Cuadro central Hola,soy Gabriel Torrez...*/
 .divTitulo {
-  margin-top: 70px;
+  margin-top: 30px;
   text-align: center;
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
-  height: 400px;
+  height: 450px;
 }
 .h1Titulo {
-  font-size: 9.4rem;
-  line-height: 1;
+  font-size: 9rem;
+  line-height: 0.9;
   font-weight: 600;
-  letter-spacing: 1px;
   width: 600px;
   /*Letras color en gradiente*/
   background: linear-gradient(to right, #0077b6, #00b4d8);
@@ -141,6 +153,7 @@ section {
   animation: gradient 5s ease infinite;
 }
 .spanTitulo {
+  margin-top: 10px;
   font-size: 23px;
   color: var(--blanco);
   font-weight: 600;
@@ -148,22 +161,22 @@ section {
 }
 /*Div y Botones para contacto o descargar Cv*/
 .divBtnsHero {
-  margin-top: 35px;
+  margin-top: 22px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
-.descargarCv {
-  height: 28px;
-}
+.descargarCv,
 .contactameLogo {
   height: 22px;
 }
+
 /*botones de Hero */
 .aHero {
-  padding: 21px 34px;
+  margin-top: 5px;
+  padding: 18px 30px;
   background-color: var(--bg-buttons);
   color: var(--text-buttons);
   font-size: 23px;
@@ -178,7 +191,6 @@ section {
 
 /* UL Botones Hero: Github  Linkedin Cel*/
 .ulBtnsContacto {
-  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -214,6 +226,7 @@ section {
 
 /* Section Sobre mi , Habilidades, etc*/
 #sectionSobreMi {
+  margin-top: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
