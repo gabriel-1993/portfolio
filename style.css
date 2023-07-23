@@ -221,7 +221,7 @@ section {
 .divDecoration {
   height: 4rem;
   width: 0px;
-  border: solid 5px gray;
+  border: solid 5px var(--socials-buttons);
 }
 
 /* Section Sobre mi , Habilidades, etc*/
