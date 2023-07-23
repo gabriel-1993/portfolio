@@ -19,20 +19,21 @@
     <title>Gabriel Torrez</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <a class="gaby" href="#"> { gaby }</a>
       <nav>
         <img src="./assets/icon-menu.svg" alt="" class="menu-icon1 activo" />
 
         <ul class="navbar-list">
-          <li><a class="navbar-link" href="#">Sobre mi</a></li>
-          <li><a class="navbar-link" href="#">Skills</a></li>
-          <li><a class="navbar-link" href="#">Proyectos</a></li>
+          <li><a class="navbar-link" href="#sectionSobreMi">Sobre mi</a></li>
+          <li><a class="navbar-link" href="#sectionProyectos">Mis proyectos</a></li>
+          <li><a class="navbar-link" href="#sectionContacto">Contáctame</a></li>
+
         </ul>
         <div class="overlay"></div>
       </nav>
     </header>
-    <section class="sectionHero">
+    <section id="sectionHero">
       <div class="divUlBtns">
         <ul class="ulBtnsContacto">
           <li>
@@ -393,10 +394,10 @@
         </div>
         </div>
       </div>
-    </section>
+    </section>  
     <section id="sectionContacto">
       <div class="divContactoTexto">
-        <h1 class="h1Contacto">Ahora o nunca!<span class="spanContactame"><span class="spanInsercion">&#160;</span></h1>
+        <h1 class="h1Contacto">Ahora o nunca!<span class="spanContactame"></h1>
         <p class="pContacto">Si quieres contactarme conmigo, puedes hacerlo a través de las redes sociales o llenando el formulario de contacto. Te responderé lo antes posible. ¡Gracias! 😊</p>
      <div class="divEmailCel">
         <p class="font-bold"><i class="fa-regular fa-envelope"></i>gabrieltorrez9303@gmail.com</p>
@@ -462,11 +463,9 @@
       </ul>
       <p class="font-bold font-boldFooter">Hecho con ❤️ por Gabriel Torrez.</p>
     </footer>
-    <div class="go-top-container">
-      <div class="go-top-button">
-        <i class="fa-solid fa-chevron-up"></i>
-      </div>
-    </div>
+   
+    <a href="#header"><i class="fa-solid fa-chevron-up" ></i></a>
+      
     <script src="./index.js"></script>
   </body>
 </html>

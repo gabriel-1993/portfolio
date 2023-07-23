@@ -18,6 +18,8 @@ const spanContactame = document.querySelector(".spanContactame");
 const formulario = document.querySelector("#form");
 //capturar enlace <a> que envia form al correo(permitira darle un click automatico)
 const btnEnviarForm = document.querySelector("#emailJS");
+//capturar boton arriba
+const botonArriba = document.querySelector(".fa-chevron-up");
 
 // FUNCIONES ************************************************
 //Funcion para actualizar logo cuando se abra o cierre el menu responsive
@@ -98,6 +100,16 @@ function controlSubmit(event) {
   btnEnviarForm.click();
 }
 
+/* Funcion para ir arriba al hacer click en el boton (>) */
+function irArriba() {
+  let scroll = document.documentElement.scrollTop;
+  if (scroll > 487) {
+    botonArriba.style.right = 20 + "px";
+  } else {
+    botonArriba.style.right = -100 + "px";
+  }
+}
+
 // Puerta de entrada
 const init = () => {
   abrirMenu.addEventListener("click", menuRespOnOff);
@@ -106,5 +118,6 @@ const init = () => {
   overlay.addEventListener("click", closeMenuOnClickOut);
   maquinaEscribir("Contactáme.  ", 160, spanContactame);
   formulario.addEventListener("submit", controlSubmit);
+  window.addEventListener("scroll", irArriba);
 };
 init();

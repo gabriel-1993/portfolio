@@ -116,7 +116,7 @@ section {
   align-items: center;
 }
 
-.sectionHero {
+#sectionHero {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -229,7 +229,7 @@ section {
 
 /* ********************************************   Section Sobre mi , Habilidades, etc********************************* */
 #sectionSobreMi {
-  margin-top: 75px;
+  padding: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -294,7 +294,6 @@ section {
 /*Div contenedor Educacion*/
 .divEducacion {
   margin-top: 20px;
-  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -362,6 +361,9 @@ section {
 }
 
 /* ********************************************************  Proyectos ***************************************************/
+#sectionProyectos {
+  padding-top: 75px;
+}
 /*Div contenedor de cada una de las cards de proyectos*/
 .divContenedorProyectos {
   width: 85%;
@@ -512,7 +514,7 @@ section {
 #sectionContacto {
   display: flex;
   flex-direction: row;
-  height: 95vh;
+  height: 100vh;
   width: 85%;
 }
 
@@ -537,14 +539,7 @@ section {
   color: var(--texto);
   font-size: 3.3rem;
 }
-/* punto de insercion o | barra a la derecha mientras se va escribiendo*/
-.spanInsercion {
-  position: absolute;
-  right: 0;
-  width: 0;
-  background-color: var(--background);
-  border-left: 2px solid var(--texto);
-}
+
 .pContacto {
   color: var(--texto);
   font-size: 18px;
@@ -685,15 +680,14 @@ footer p {
   width: 100%;
 }
 
-/* flecha fija para ir scrollear al principio de la web*/
+/*GO TOP- flecha volver inicio*/
 .fa-chevron-up {
   color: var(--texto);
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background: linear-gradient(-45deg, #ee7752, #e83c61, #23a6d5, #23d5ab);
   border-radius: 50%;
-  padding: 12px;
-  cursor: pointer;
-  font-size: 1rem;
+  font-size: 16px;
+  padding: 11px 13px;
   position: fixed;
-  bottom: 25px;
-  right: 20px;
+  bottom: 20px;
+  right: -100px;
 }
