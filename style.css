@@ -24,6 +24,18 @@
   font-family: "Inter", sans-serif;
   list-style: none;
   border: none;
+  scroll-behavior: smooth;
+}
+/* Barra Scroll */
+body::-webkit-scrollbar {
+  background-color: hsl(180, 2%, 25%);
+  width: 14px;
+}
+body::-webkit-scrollbar-thumb {
+  background: hsl(180, 3%, 41%);
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: hsl(180, 3%, 49%);
 }
 body {
   background-color: var(--background);
@@ -586,6 +598,7 @@ form {
 }
 .contacto-datos {
   background-color: var(--background);
+  color: var(--texto);
   border: solid 1px var(--texto);
   font-size: 1rem;
   padding: 11px 8px;

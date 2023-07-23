@@ -25,7 +25,7 @@
         <img src="./assets/icon-menu.svg" alt="" class="menu-icon1 activo" />
 
         <ul class="navbar-list">
-          <li><a class="navbar-link" href="#sectionSobreMi">Sobre mi</a></li>
+          <li><a class="navbar-link" href="#sectionSobreMi">Sobre mí</a></li>
           <li><a class="navbar-link" href="#sectionProyectos">Mis proyectos</a></li>
           <li><a class="navbar-link" href="#sectionContacto">Contáctame</a></li>
 
@@ -406,10 +406,11 @@
       </div>
       <div class="divContactoForm">
        
-          <form id="form">
+          <form id="form" action="https://formspree.io/f/xdorkpyq"
+          method="POST">
             <!-- form de contacto -->
             <div>
-              <input class=" contacto-datos input-nombre" name="name" id="name" type="text"
+              <input class=" contacto-datos input-nombre"  type="name" name="name" id="name" 
               placeholder = 'Nombre completo'" placeholder="Ingrese
               nombre completo">
             </div>
@@ -424,7 +425,7 @@
               placeholder="Asunto">
             </div>
             <div><textarea placeholder = 'Ingrese su mensaje aquí'"
-              placeholder="Ingrese su mensaje aquí" class="contacto-datos" name="mensaje"></textarea></div>   
+              placeholder="Ingrese su mensaje aquí" class="contacto-datos" name="message"></textarea></div>   
             <div class="divSubmit">
           
             
@@ -456,7 +457,7 @@
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#sectionContacto">
             <i class="fa-solid fa-square-phone"></i>
           </a>
         </li>
@@ -464,7 +465,7 @@
       <p class="font-bold font-boldFooter">Hecho con ❤️ por Gabriel Torrez.</p>
     </footer>
    
-    <a href="#header"><i class="fa-solid fa-chevron-up" ></i></a>
+    <a href="#header"><i class="fa-solid fa-chevron-up fa-bounce" ></i></a>
       
     <script src="./index.js"></script>
   </body>

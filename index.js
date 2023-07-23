@@ -85,19 +85,23 @@ const maquinaEscribir = (text = "", tiempo = 160, etiqueta = "") => {
   }, tiempo);
 };
 
-/*Controlar submit del formulario*/
-
-function controlSubmit(event) {
+/*Controlar submit del formulario y enviar form con FORMSPREE*/
+/*Video tutorial: https://www.youtube.com/watch?v=qtH8PLuy1Ck&t=96s */
+async function controlarSubmit(event) {
   event.preventDefault();
-  const form2 = new FormData(this);
-  console.log(form2.get("name"));
-  btnEnviarForm.setAttribute(
-    "href",
-    `mailto:gabrieltorrez@gmail.com?subject=${form.get("name")}${form.get(
-      "correo"
-    )}&body=${form.get("mensaje")}`
-  );
-  btnEnviarForm.click();
+  const formulario = new FormData(this);
+  const response = await fetch(this.action, {
+    method: this.method,
+    body: formulario,
+    headers: {
+      Accept: "application/json",
+    },
+  });
+  if (response.ok) {
+    //limpiar form
+    this.reset();
+    alert("Gracias por contactarme, te respondere pronto. 😊");
+  }
 }
 
 /* Funcion para ir arriba al hacer click en el boton (>) */
@@ -117,7 +121,7 @@ const init = () => {
   window.addEventListener("scroll", closeMenuOnScroll);
   overlay.addEventListener("click", closeMenuOnClickOut);
   maquinaEscribir("Contactáme.  ", 160, spanContactame);
-  formulario.addEventListener("submit", controlSubmit);
   window.addEventListener("scroll", irArriba);
+  formulario.addEventListener("submit", controlarSubmit);
 };
 init();
