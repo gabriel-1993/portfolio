@@ -1,104 +1,23 @@
 :root {
-  --naranja: hsl(35, 77%, 62%);
-  --rojo: hsl(5, 85%, 63%);
-  --blanco: hsl(36, 100%, 99%);
-  --celeste: hsl(233, 8%, 79%);
-  --azul1: hsl(236, 13%, 42%);
-  --azul2: #00001a;
+  --background: hsl(225, 6%, 13%);
+  --bg-buttons: rgb(95, 73, 131);
+  --text-buttons: #f8faff;
+  --socials-buttons: rgb(168, 172, 179);
+  --texto: rgb(232, 234, 237);
+  --texto-secundario: rgb(154, 160, 166);
 }
 @media (max-width: 992px) {
-  section {
-    gap: 23px;
-  }
-  .divContUp {
-    display: flex;
-    flex-direction: column;
-  }
-  .div1 {
-    width: 100%;
-  }
-  .div1__p {
-    gap: 10px;
-  }
-  /* contenedor azul oscuro  */
-  .div2 {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  .div2 h2 {
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  /* contenedor de las cards */
-  .divCardsNew {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-  /* cards */
-  .divCardsNew div {
-    padding: 0px 15px;
-    padding-left: 0px;
-    width: 33%;
-    height: 190px;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
-  }
-  .divCardsNew div h4 {
-    text-align: center;
-  }
-  .divBorder {
-    border-top: none;
-    border-bottom: none;
-    border-left: solid 1px var(--azul1);
-    border-right: solid 1px var(--azul1);
-  }
-  /* h1 the bright future...? -font size*/
-  .div1__h1 h1 {
-    font-size: 2.6rem;
-  }
-
-  /* div contenedor azul marino -padding -gap */
-
-  button {
-    width: 100%;
-  }
-  /* p de las cards lado azul oscuro */
-  .div2 div p {
-    text-align: center;
-    line-height: 25px;
-  }
-
-  /* ultimas 3 cards */
-  .cardDown {
-    height: 140px;
-    width: 33%;
-  }
-  /* 01 02 03 de cada cards  */
-  .divContDown .cardDown .textCard span {
-    font-size: 20px;
-  }
-  .textCard {
-    justify-content: unset;
-    height: 100%;
-  }
-  .textCard h4 {
-    font-size: 15px;
-  }
-  .textCard p {
-    font-size: 16px;
-    line-height: 14px;
+  header {
+    width: 90%;
   }
 }
-/* **************************************************************************************************** */
-@media (max-width: 768px) {
-  /*  Logo a la izquierda del header **/
-  .wHeader {
-    height: 40%;
-  }
 
+/* **************************************************************************************************** */
+@media (max-width: 767px) {
+  header {
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
   /* menu que se muestra debajo del header para menu hamburguesa */
   .navbar-list {
     position: absolute;
@@ -118,9 +37,8 @@
   /* color para los enlaces  */
   .navbar-list a {
     font-size: 20px;
-    color: var(--azul2);
+    color: var(--texto);
   }
-
   /* Mostramos el icono del menu div contenedor */
   .activo {
     display: flex;
@@ -133,11 +51,6 @@
     display: flex;
   }
 
-  header {
-    width: auto;
-    justify-content: space-between;
-    padding: 0px 20px;
-  }
   .divContUp {
     display: flex;
     flex-direction: column;

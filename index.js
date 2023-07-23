@@ -1,17 +1,17 @@
 // Botón para abrir y cerrar menú (div que lo contiene)
 const barsBtn = document.querySelector(".menu-label");
 // ||| logo menu responsive
-const abrirMenu = document.querySelector(".menu-icon1");
+const abrirMenu = document.querySelector(".fa-bars");
 // X logo cerrar menu responsive
-const cerrarMenu = document.querySelector(".menu-icon2");
+const cerrarMenu = document.querySelector(".fa-xmark");
 //  Menú (Hamburguesa)
 const barsMenu = document.querySelector(".navbar-list");
 //  Overlay para tirar facha abajo del menú hamburguesa y el cart.
 const overlay = document.querySelector(".overlay");
 // Logo menu responsive antes de abrirlo
-const logoResponsive = document.querySelector(".menu-icon1");
+const logoResponsive = document.querySelector(".fa-bars");
 // Logo menu responsive X para cerrarlo
-const logoResponsiveX = document.querySelector(".menu-icon2");
+const logoResponsiveX = document.querySelector(".fa-xmark");
 //span cartel contactame en form
 const spanContactame = document.querySelector(".spanContactame");
 //Capturo formulario

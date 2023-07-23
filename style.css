@@ -1,15 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 
 :root {
-  --naranja: hsl(35, 77%, 62%);
-  --rojo: hsl(5, 85%, 63%);
-  --blanco: hsl(36, 100%, 99%);
-  --celeste: hsl(233, 8%, 79%);
-  --azul1: hsl(236, 13%, 42%);
   --background: hsl(225, 6%, 13%);
-  --amarillo: hsl(55, 100%, 50%);
-  --celesteOscuro: hsl(201, 100%, 36%);
-  --celesteClaro: hsl(190, 100%, 42%);
   --bg-buttons: rgb(95, 73, 131);
   --text-buttons: #f8faff;
   --socials-buttons: rgb(168, 172, 179);
@@ -48,14 +40,20 @@ body {
 header {
   margin: auto;
   height: 65px;
-  width: 80%;
+  width: 77%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
+/*div con Gaby y iconos resp lado izquierdo*/
+.divLeft {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  gap: 18px;
+}
 .gaby {
-  color: var(--blanco);
+  color: var(--texto);
   font-size: 30px;
   font-weight: 800;
   cursor: pointer;
@@ -64,20 +62,47 @@ header {
 .gaby:hover {
   transform: scale(1.2);
 }
+/* div contenedor del nav y los iconos de modo oscuro/claro*/
+.divNavYmode {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
 /* ***************************************** MENU HAMBURGUESA Ocultar en Desktop *********************************** */
-
-.menu-icon1 {
+/*icono menu resp*/
+.fa-bars {
   display: none;
+  color: var(--texto);
+  font-size: 25px;
+}
+/*icono cerrar menu resp*/
+.fa-xmark {
+  display: none;
+  color: var(--texto);
+  font-size: 25px;
+}
+/*icono luna */
+.fa-moon,
+.fa-sun {
+  color: var(--texto-secundario);
+  font-size: 22px;
+  padding: 7px 10px;
+  border-radius: 50%;
+}
+.fa-moon:hover,
+.fa-sun:hover {
+  background-color: hsl(0, 0%, 50%, 0.1);
 }
 
 .navbar-list {
+  border: white 1px solid;
   display: flex;
   height: 100%;
 }
 nav a {
   height: 100%;
   cursor: pointer;
-  color: var(--blanco);
+  color: var(--texto);
   font-size: 17px;
   letter-spacing: 2px;
   font-weight: 300;
@@ -159,7 +184,7 @@ section {
   transition: 0.3s;
 }
 
-/*agrego el fa globe para no repetir codido*/
+/*agrego el fa globe para no repetir codigo*/
 .fa-github:hover,
 .fa-linkedin:hover,
 .fa-square-phone:hover,
@@ -170,9 +195,9 @@ section {
 
 /* linea vertical final*/
 .divDecoration {
-  height: 4rem;
+  height: 3rem;
   width: 0px;
-  border: solid 5px var(--socials-buttons);
+  border: solid 4px var(--socials-buttons);
 }
 /* contiene el saludo y el div de los botones*/
 .contenedorHero {
@@ -205,7 +230,7 @@ section {
 .spanTitulo {
   margin-top: 10px;
   font-size: 23px;
-  color: var(--blanco);
+  color: var(--texto);
   font-weight: 600;
   text-align: center;
 }
