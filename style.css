@@ -494,7 +494,7 @@ section {
 #sectionContacto {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 95vh;
   width: 85%;
 }
 
@@ -611,4 +611,58 @@ textarea {
 #emailJS {
   opacity: 0;
   cursor: default;
+}
+
+/* *****************************  footer ***************************** */
+footer {
+  width: 100%;
+  height: 55vh;
+  padding-top: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid var(--texto);
+}
+
+footer h2 {
+  margin-bottom: 31px;
+  color: var(--texto);
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+/*btn contactame footer */
+.aFooter {
+  margin-bottom: 40px;
+  padding: 18px 43px;
+  background-color: var(--bg-buttons);
+  color: var(--text-buttons);
+  font-size: 23px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 6px;
+}
+.aFooter:hover {
+  transform: scale(1.1);
+}
+
+footer p {
+  margin-bottom: 28px;
+  color: var(--texto);
+  font-weight: 100;
+  font-size: 15px;
+}
+
+.ulBtnsContactoFooter {
+  margin-bottom: 15px;
+  display: flex;
+  gap: 18px;
+}
+
+.font-boldFooter {
+  padding-left: 107px;
+  text-align: start;
+  width: 100%;
 }
