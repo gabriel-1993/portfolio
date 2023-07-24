@@ -20,6 +20,12 @@ const formulario = document.querySelector("#form");
 const btnEnviarForm = document.querySelector("#emailJS");
 //capturar boton arriba
 const botonArriba = document.querySelector(".fa-chevron-up");
+//div contenedor de iconos Luna y Sol
+const divClaroOscuro = document.querySelector(".divClaroOscuro");
+//capturar icono Luna
+const botonLuna = document.querySelector(".fa-moon");
+//capturar icono sol
+const botonSol = document.querySelector(".fa-sun");
 
 // FUNCIONES ************************************************
 //Funcion para actualizar logo cuando se abra o cierre el menu responsive
@@ -114,6 +120,17 @@ function irArriba() {
   }
 }
 
+//Funcion para cambiar de icono SOL/ LUNA al recibir un click.
+const actualizarIconoClaroOscuro = () => {
+  if (botonLuna.classList.contains("fa-moon-active")) {
+    botonLuna.classList.remove("fa-moon-active");
+    botonSol.classList.add("fa-sun-active");
+  } else if (botonSol.classList.contains("fa-sun-active")) {
+    botonSol.classList.remove("fa-sun-active");
+    botonLuna.classList.add("fa-moon-active");
+  }
+};
+
 // Puerta de entrada
 const init = () => {
   abrirMenu.addEventListener("click", menuRespOnOff);
@@ -123,5 +140,6 @@ const init = () => {
   maquinaEscribir("Contactáme.  ", 160, spanContactame);
   window.addEventListener("scroll", irArriba);
   formulario.addEventListener("submit", controlarSubmit);
+  divClaroOscuro.addEventListener("click", actualizarIconoClaroOscuro);
 };
 init();

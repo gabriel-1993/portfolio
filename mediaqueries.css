@@ -7,6 +7,8 @@
   --texto-secundario: rgb(154, 160, 166);
 }
 @media (max-width: 992px) {
+  * {
+  }
   header {
     width: 100%;
   }
@@ -16,7 +18,7 @@
   }
 
   .contenedorHero {
-    padding-right: 0px;
+    padding-right: 0;
     height: 463px;
     margin-top: 40px;
     margin-bottom: 50px;
@@ -25,6 +27,11 @@
   /* GITHUB VERCEL TELEFONO*/
   .divUlBtns .ulBtnsContacto {
     flex-direction: row;
+  }
+  /* UL Botones Hero: Github  Linkedin Cel*/
+  .ulBtnsContacto {
+    bottom: unset;
+    left: unset;
   }
 
   /*oculto el div vertical gris */
@@ -65,11 +72,14 @@
   .open-menu {
     display: flex;
   }
+
+  /* ****************************************** SECCION PORTADA *****************************/
   #sectionHero {
+    width: 100%;
     height: 85vh;
   }
-
   .contenedorHero {
+    width: 300px;
     padding: 0px;
     height: 390px;
     margin-top: 0px;
@@ -91,7 +101,8 @@
   .h1Titulo {
     margin-top: 6px;
     font-size: 5.3rem;
-    width: 380px;
+    width: auto;
+    border: solid 1px white;
     line-height: 0.9;
     font-weight: 600;
   }
@@ -135,5 +146,67 @@
     gap: 20px;
     bottom: 0;
     left: 0;
+  }
+  /* ******************************************* Sobre mi ***************************************/
+  #sectionSobreMi {
+    margin-top: 60px;
+    padding: 20px;
+  }
+  /*contenedor del parrafo*/
+  .divDown {
+    width: 100%;
+  }
+
+  /*parrafo sobre mi*/
+  .pSobreMi {
+    color: var(--texto);
+    text-align: left;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  /*slider habilidades mas rapido*/
+  .slider .slide-track {
+    animation: scroll 10s linear infinite;
+    -webkit-animation: scroll 11s linear infinite;
+    width: calc(150px * 10);
+    gap: 20px;
+  }
+
+  /***********************************   TRAYECTORIA *******************************************/
+  /*Contenedor de Mi trayectoria, Educacion y cards */
+  .divTrayectoria {
+    width: 100%;
+  }
+  /*div con titulo educacion y otro div que contiene las cards*/
+  .divEducacion {
+    width: 100%;
+  }
+  /* div que contiene las cards de estudios*/
+  .divTiempo {
+    width: 100%;
+  }
+  /*modifico width del ol que contiene: los 3 li de las 3 cards*/
+  .divTiempo ol {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+  /*width para cada card*/
+  .divTiempo ol li {
+    width: 100%;
+  }
+  /*modifico solo la segunda card hacia la derecha y su icono calendario */
+  .liRight {
+    text-align: right;
+  }
+  .divLinealRight {
+    justify-content: flex-end;
+  }
+  .calendarioRight {
+  }
+
+  .divDecoration2 {
+    display: none;
   }
 }

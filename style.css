@@ -83,17 +83,41 @@ header {
   color: var(--texto);
   font-size: 25px;
 }
-/*icono luna */
-.fa-moon,
-.fa-sun {
+/*div contenedor del icono sol y el icono luna*/
+.divClaroOscuro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+}
+/*ocultar luna*/
+.fa-moon {
+  display: none;
+}
+/*icono luna y sol */
+.fa-moon-active {
+  display: flex;
+  position: absolute;
   color: var(--texto-secundario);
   font-size: 22px;
-  padding: 7px 10px;
+  padding: 9px 13px;
   border-radius: 50%;
 }
+/*ocultar icono sol clase en html predeterminada*/
 .fa-sun {
+  display: none;
+}
+/* clase agregada con JS para mostrarlo*/
+.fa-sun-active {
+  display: flex;
+  position: absolute;
+  font-size: 22px;
+  padding: 9px 10px;
+  border-radius: 50%;
   color: #9eff49;
 }
+
 .fa-moon:hover,
 .fa-sun:hover {
   background-color: hsl(0, 0%, 50%, 0.1);
@@ -155,11 +179,13 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 #sectionHero {
   height: 95vh;
   display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: row;
 }
@@ -332,6 +358,10 @@ section {
 /**************************************************  Mi Trayectoria  **********************************************/
 
 .divTrayectoria {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 85%;
 }
 /*Div contenedor Educacion*/
