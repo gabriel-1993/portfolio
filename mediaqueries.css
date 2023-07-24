@@ -7,8 +7,6 @@
   --texto-secundario: rgb(154, 160, 166);
 }
 @media (max-width: 992px) {
-  * {
-  }
   header {
     width: 100%;
   }
@@ -73,7 +71,7 @@
     display: flex;
   }
 
-  /* ****************************************** SECCION PORTADA *****************************/
+  /* ****************************************** SECCION PORTADA *********************************/
   #sectionHero {
     width: 100%;
     height: 85vh;
@@ -201,8 +199,6 @@
   }
   .divLinealRight {
     justify-content: flex-end;
-  }
-  .calendarioRight {
   }
 
   .divDecoration2 {

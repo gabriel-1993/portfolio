@@ -362,10 +362,11 @@ section {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: 95%;
 }
 /*Div contenedor Educacion*/
 .divEducacion {
+  width: min(100%, 1350px);
   margin-top: 20px;
   display: flex;
   flex-direction: column;
@@ -588,7 +589,8 @@ section {
   display: flex;
   flex-direction: row;
   height: 100vh;
-  width: 85%;
+  width: min(85%, 1350px);
+  height: auto;
 }
 
 .divContactoTexto {
