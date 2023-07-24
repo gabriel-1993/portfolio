@@ -36,6 +36,76 @@
   .divDecoration {
     display: none;
   }
+  /*aumento width a sections y contenedores*/
+  #sectionSobreMi {
+    margin-top: 60px;
+    width: 100%;
+    padding: 0;
+  }
+  .pSobreMi {
+    width: 100%;
+    padding: 0;
+  }
+  .divTrayectoria {
+    width: 100%;
+  }
+  /*proyectos*/
+  .divTitulosProyectos {
+    width: 95%;
+  }
+  .divContenedorProyectos {
+    width: 95%;
+  }
+  .divTextProyecto {
+    margin-top: 10px;
+  }
+  /* parrafo descriptivo del proyecto*/
+  .pProyecto {
+    margin-top: 20px;
+    color: var(--texto);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.7rem;
+    background-color: var(--bg-buttons);
+    padding: 16px 14px;
+    border-radius: 10px;
+    width: min(50%, 600px);
+  }
+
+  .divCardsOtrosProyectos {
+    flex-wrap: wrap;
+    width: 95%;
+    gap: 8px;
+    padding-bottom: 1px;
+  }
+  .cardOtroProyecto {
+    height: 340px;
+    width: max(45%, 290px);
+    padding: 20px;
+    border: 0.1px solid #e5e7eb1e;
+    box-shadow: 10px 10px 20px hsl(225, 7%, 11%);
+    border-radius: 5px;
+  }
+
+  /* CONTACTO*/
+  #sectionContacto {
+    padding-top: 130px;
+    width: 95%;
+  }
+  .spanContactame {
+    height: 75px;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+    background-color: var(--bg-buttons);
+    border-radius: 7px;
+    font-size: 2.9rem;
+  }
+  /* FOOTER */
+  footer h2 {
+    margin-top: 70px;
+  }
 }
 /* **************************************************************************************************** */
 @media (max-width: 767px) {

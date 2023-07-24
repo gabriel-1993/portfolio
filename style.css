@@ -303,13 +303,14 @@ section {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  justify-content: center;
   gap: 3rem;
 }
 
 .divTitulos,
 .divDown {
   text-align: center;
-  width: 85%;
+  width: 95%;
 }
 /*Titulo Sobre Mi, Habilidades, Educacion ,Mis Proyectos*/
 .text4x1 {
@@ -438,6 +439,10 @@ section {
 #sectionProyectos {
   padding-top: 75px;
 }
+.divTitulosProyectos {
+  width: 85%;
+  text-align: center;
+}
 /*Div contenedor de cada una de las cards de proyectos*/
 .divContenedorProyectos {
   width: 85%;
@@ -517,13 +522,13 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 12px;
   padding-bottom: 50px;
 }
 /*Card individual de cada proyecto*/
 .cardOtroProyecto {
-  width: 32%;
-  height: 370px;
+  width: 30%;
+  height: 355px;
   padding: 20px;
   border: 0.1px solid #e5e7eb1e;
   box-shadow: 10px 10px 20px hsl(225, 7%, 11%);
@@ -589,7 +594,7 @@ section {
   display: flex;
   flex-direction: row;
   height: 100vh;
-  width: min(85%, 1350px);
+  width: min(85%, 1140px);
   height: auto;
 }
 
@@ -611,7 +616,7 @@ section {
   padding-left: 13px;
   background-color: var(--bg-buttons);
   border-radius: 7px;
-  color: var(--texto);
+  color: var(--text-buttons);
   font-size: 3.3rem;
 }
 
