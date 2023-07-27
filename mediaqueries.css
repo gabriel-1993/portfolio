@@ -160,7 +160,7 @@
     width: 300px;
     padding: 0px;
     height: 400px;
-    margin-top: 0px;
+    margin-top: 65px;
     margin-bottom: 0px;
   }
   /* contenedor del saludo en general*/
@@ -211,7 +211,7 @@
   /* div contenedor del github vercel y contacto vertical en el hero*/
   .divUlBtns {
     border: none;
-    margin-top: 1px;
+    margin-top: 60px;
     height: auto;
     padding: 0px;
   }
@@ -226,6 +226,7 @@
   /* ******************************************* Sobre mi ***************************************/
   #sectionSobreMi {
     padding: 20px;
+    margin-top: 100px;
     padding-top: 0px;
   }
   /*contenedor del parrafo*/
