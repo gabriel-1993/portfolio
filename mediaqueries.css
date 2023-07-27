@@ -79,12 +79,7 @@
     padding-bottom: 1px;
   }
   .cardOtroProyecto {
-    height: 340px;
-    width: max(45%, 290px);
-    padding: 20px;
-    border: 0.1px solid #e5e7eb1e;
-    box-shadow: 10px 10px 20px hsl(225, 7%, 11%);
-    border-radius: 5px;
+    width: max(70%, 370px);
   }
 
   /* CONTACTO*/
@@ -117,13 +112,12 @@
   .navbar-list {
     position: absolute;
     top: 65px;
-    left: 36%;
+    left: 0%;
     right: 36%;
-    width: 65%;
+    width: 100%;
     height: 100%;
     flex-direction: column;
-    background-color: var(--blanco);
-    align-items: flex-start;
+    align-items: center;
     padding: 20px 30px;
     gap: 35px;
     z-index: 2;
@@ -131,8 +125,12 @@
   }
   /* color para los enlaces  */
   .navbar-list a {
-    font-size: 20px;
+    font-size: 1.3rem;
+    font-weight: 600;
     color: var(--texto);
+  }
+  .navbar-list a:hover {
+    background-color: hsl(0, 0%, 50%, 0.1);
   }
   /* Mostramos el icono del menu div contenedor */
   .activo {
@@ -149,12 +147,11 @@
 
   #sectionHero {
     width: 100%;
-    height: 85vh;
   }
   .contenedorHero {
     width: 300px;
     padding: 0px;
-    height: 390px;
+    height: 800px;
     margin-top: 0px;
     margin-bottom: 0px;
   }
@@ -167,7 +164,7 @@
   .spanTitulo {
     font-weight: 100;
     font-size: 1.1rem;
-    margin-top: 12px;
+    margin-top: 10px;
   }
 
   /*Gabriel Torrez*/
@@ -179,15 +176,15 @@
     font-weight: 600;
   }
   .spanTitulo2 {
-    margin-top: 16px;
+    margin-top: 8px;
   }
   /* contenedor contactame descargarCv*/
   .divBtnsHero {
-    margin-top: 18px;
+    margin-top: 8px;
     height: auto;
     width: 250px;
     flex-direction: column;
-    gap: 10px;
+    gap: 5px;
   }
   /*btns  contactame descargarCv*/
   .aHero {
@@ -206,7 +203,7 @@
   /* div contenedor del github vercel y contacto vertical en el hero*/
   .divUlBtns {
     border: none;
-    margin-top: 0px;
+    margin-top: 1px;
     height: auto;
     padding: 0px;
   }
@@ -220,8 +217,8 @@
   }
   /* ******************************************* Sobre mi ***************************************/
   #sectionSobreMi {
-    margin-top: 60px;
     padding: 20px;
+    padding-top: 60px;
   }
   /*contenedor del parrafo*/
   .divDown {
@@ -248,7 +245,7 @@
   /*Contenedor de Mi trayectoria, Educacion y cards */
   .divTrayectoria {
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 2px;
   }
   /*div con titulo educacion y otro div que contiene las cards*/
   .divEducacion {
@@ -281,6 +278,9 @@
   }
 
   /************************** PROYECTOS ****************************/
+  #sectionProyectos {
+    padding-top: 50px;
+  }
 
   .divContenedorProyectos {
     display: flex;
@@ -293,27 +293,25 @@
     flex-direction: column-reverse;
 
     border: 0.1px solid #e5e7eb1e;
-    height: 30%;
+    height: 32%;
     width: 93%;
     border-radius: 7px;
   }
   .imgProyecto {
     width: 100%;
-    height: 55%;
+    height: 53%;
     border-radius: 7px;
     margin: 0px;
   }
   .divTextProyecto {
-    margin: 0px;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 45%;
+    height: 47%;
     width: 100%;
     padding: 0;
-    gap: 20px;
+    padding-bottom: 10px;
   }
 
   .text4x1 {
@@ -326,6 +324,7 @@
     font-size: 0.8rem;
     line-height: 1.3rem;
     padding: 0px 14px;
+    margin-bottom: 7px;
     width: min(600px, 90%);
   }
   .ulLenguajes {
@@ -334,6 +333,7 @@
     justify-content: center;
     gap: 10px;
     width: 100%;
+    margin-bottom: 8px;
   }
   .divEnlacesProyecto {
     margin-top: 0px;
@@ -342,11 +342,20 @@
     gap: 24px;
     padding-right: 20px;
   }
+  .cardOtroProyecto {
+    height: max(10%, 340px);
+    width: 95%;
+    padding: 20px;
+    border: 0.1px solid #e5e7eb1e;
+    box-shadow: 10px 10px 20px hsl(225, 7%, 11%);
+    border-radius: 5px;
+  }
 
   #sectionContacto {
     flex-direction: column;
-    padding-top: 70px;
+    padding-top: 50px;
   }
+
   .divContactoTexto {
     width: 95%;
     display: flex;
@@ -358,7 +367,7 @@
   }
 
   .divContactoTexto span {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     width: 250px;
     height: 70px;
     margin-bottom: 30px;
@@ -374,6 +383,7 @@
   }
   .divContactoForm {
     width: 95%;
+    margin-top: 15px;
   }
 
   footer h2 {
@@ -383,7 +393,7 @@
     font-size: 0.8rem;
   }
   .font-boldFooter {
-    padding-left: 5px;
+    padding-left: 15px;
     padding-bottom: 10px;
   }
 }
