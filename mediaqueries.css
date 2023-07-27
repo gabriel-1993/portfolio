@@ -281,9 +281,7 @@
   }
 
   /************************** PROYECTOS ****************************/
-  #sectionProyectos {
-    border: red 1px solid;
-  }
+
   .divContenedorProyectos {
     display: flex;
     flex-direction: column;
