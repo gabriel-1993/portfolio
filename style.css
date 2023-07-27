@@ -292,6 +292,7 @@ section {
   transition: 0.3s;
   border-radius: 5px;
 }
+
 .aHero:hover {
   transform: scale(1.1);
 }
