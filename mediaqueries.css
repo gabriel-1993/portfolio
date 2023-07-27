@@ -128,8 +128,10 @@
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--texto);
+    width: 100%;
   }
   .navbar-list a:hover {
+    width: 100%;
     background-color: hsl(0, 0%, 50%, 0.1);
   }
   /* Mostramos el icono del menu div contenedor */

@@ -156,8 +156,6 @@ nav a:hover {
   z-index: 1; /*Para que quede por encima del resto de las cosas*/
 
   /*Efecto de Glassmorphismo*/
-  background: --azul1, 0.5;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   display: none;
