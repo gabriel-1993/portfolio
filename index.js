@@ -137,7 +137,7 @@ const init = () => {
   barsMenu.addEventListener("click", closeOnClick);
   window.addEventListener("scroll", closeMenuOnScroll);
   overlay.addEventListener("click", closeMenuOnClickOut);
-  maquinaEscribir("Contactáme.  ", 160, spanContactame);
+  maquinaEscribir("Contáctame.  ", 160, spanContactame);
   window.addEventListener("scroll", irArriba);
   formulario.addEventListener("submit", controlarSubmit);
   divClaroOscuro.addEventListener("click", actualizarIconoClaroOscuro);
