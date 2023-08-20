@@ -182,7 +182,6 @@ section {
 
 #sectionHero {
   height: 95vh;
-  margin-top: 65px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -596,7 +595,8 @@ section {
   height: 100vh;
   width: min(85%, 1140px);
   height: auto;
-  padding-top: 60px;
+  padding-top: 95px;
+  padding-bottom: 140px;
 }
 
 .divContactoTexto {
