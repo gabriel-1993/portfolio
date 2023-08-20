@@ -189,7 +189,7 @@ section {
 }
 /* barra vertical a la izquierda del hero*/
 .divUlBtns {
-  height: 99%;
+  height: calc(100% - 65px);
   display: flex;
   align-items: flex-end;
 }

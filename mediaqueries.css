@@ -23,7 +23,10 @@
   }
 
   /* GITHUB VERCEL TELEFONO*/
-  .divUlBtns .ulBtnsContacto {
+  .divUlBtns {
+    height: auto;
+  }
+  .ulBtnsContacto {
     flex-direction: row;
   }
   /* UL Botones Hero: Github  Linkedin Cel*/
@@ -41,6 +44,7 @@
     margin-top: 60px;
     width: 100%;
     padding: 0;
+    padding-top: 30px;
   }
   .pSobreMi {
     width: 100%;
@@ -215,7 +219,6 @@
   .divUlBtns {
     border: none;
     margin-top: 60px;
-    height: auto;
     padding: 0px;
   }
 
@@ -230,7 +233,6 @@
   #sectionSobreMi {
     padding: 20px;
     margin-top: 110px;
-    padding-top: 0px;
   }
   /*contenedor del parrafo*/
   .divDown {
@@ -354,6 +356,9 @@
     gap: 24px;
     padding-right: 20px;
   }
+  #sectionOtrosProyectos {
+    margin-top: 80px;
+  }
   .cardOtroProyecto {
     height: max(10%, 340px);
     width: 95%;
@@ -365,7 +370,8 @@
 
   #sectionContacto {
     flex-direction: column;
-    padding-top: 50px;
+    padding-top: 187px;
+    padding-bottom: 157px;
   }
 
   .divContactoTexto {
