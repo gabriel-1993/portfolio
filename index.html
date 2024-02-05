@@ -1,538 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./animaciones.css" />
-    <link rel="stylesheet" href="./mediaqueries.css" />
-    <link rel="icon" href="./assets/logoG.png" />
 
-    <title>Gabriel Torrez</title>
-  </head>
-  <body>
-    <header id="header">
-     
-      <div class="divLeft">
-       
-          <i class="fa-solid fa-bars activo"></i>
-          <i class="fa-solid fa-xmark"></i>  
-     
-        <a class="gaby" href="#"> { gaby }</a>
-      </div>  
-      <div class="divNavYmode">
-          <nav>  
-            <ul class="navbar-list">
-              <li><a class="navbar-link" href="#sectionSobreMi">Sobre mí</a></li>
-              <li><a class="navbar-link" href="#sectionProyectos">Mis proyectos</a></li>
-              <li><a class="navbar-link" href="#sectionContacto">Contáctame</a></li>
-            </ul>
-            <div class="overlay"></div>
-          </nav>
-          <div class="divClaroOscuro">
-            <i class="fa-solid fa-moon fa-moon-active"></i>
-            <i class="fa-solid fa-sun"></i>
-          </div>
-         
-      </div>
-    </header>
-    <section id="sectionHero">
-      <div class="divUlBtns">
-        <ul class="ulBtnsContacto">
-          <li>
-            <a href="https://github.com/gabriel-1993" target="_blank"
-              ><i class="fa-brands fa-github"></i
-            ></a>
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/gabriel-torrez-330273238"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-          </li>
-          <li>
-            <a href="#sectionContacto">
-              <i class="fa-solid fa-square-phone"></i>
-            </a>
-          </li>
-          <div class="divDecoration"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./animaciones.css" />
+  <link rel="stylesheet" href="./mediaqueries.css" />
+  <link rel="icon" href="./assets/logoG.png" />
+
+  <title>Gabriel Torrez</title>
+</head>
+
+<body>
+  <header id="header">
+
+    <div class="divLeft">
+
+      <i class="fa-solid fa-bars activo"></i>
+      <i class="fa-solid fa-xmark"></i>
+
+      <a class="gaby" href="#"> { gaby }</a>
+    </div>
+    <div class="divNavYmode">
+      <nav>
+        <ul class="navbar-list">
+          <li><a class="navbar-link" href="#sectionSobreMi">Sobre mí</a></li>
+          <li><a class="navbar-link" href="#sectionProyectos">Mis proyectos</a></li>
+          <li><a class="navbar-link" href="#sectionContacto">Contáctame</a></li>
         </ul>
+        <div class="overlay"></div>
+      </nav>
+      <div class="divClaroOscuro">
+        <i class="fa-solid fa-moon fa-moon-active"></i>
+        <i class="fa-solid fa-sun"></i>
       </div>
-      <div class="contenedorHero">
-   
-        <div class="divTitulo">
-          <span class="spanTitulo"> Hola!👋👋, soy</span>
-          <h1 class="h1Titulo">Gabriel Torrez.</h1>
-          <span class="spanTitulo spanTitulo2">Estudiante de Programación.</span>
-          <div class="divBtnsHero">
-            <a class="aHero" href="#sectionContacto">
-              <img
-                src="./assets/contactame.png"
-                alt="logoContactame"
-                class="contactameLogo"
-              />
-              Contáctame
-            </a>
-            <a class="aHero">
-              <img
-                src="./assets/descargar.png"
-                alt="logoDescargarCv"
-                class="descargarCv"
-              />
-              Descargar CV
-            </a>
-          </div>
-        </div>
-      </div>
-      
-    </section>
-    <section id="sectionSobreMi">
-      <div class="divTitulos">
-        <h2 class="fontNegrita text4x1">Sobre mí</h2>
-        <span class="spanText">Quién soy</span>
-      </div>
-      <div class="divDown">
-        <p class="pSobreMi">
-          <span class="fontNegrita">Desarrollador Front-End y estudiante </span
-          >, apasionado por el aprendizaje de este increible oficio. Me encanta
-          crear sitios web que brinden una experiencia de usuario única y
-          satisfactoria. Soy estudiante de la Universidad de La Punta, estoy
-          cursando la Tec.Desarrollo de Software, soy una persona responsable y
-          comprometida con mi trabajo. Constantemente estoy aprendiendo nuevas
-          tecnologías y herramientas para mejorar mis habilidades. Si tiene
-          alguna pregunta o algun comentario no dude en
-          <a href="#sectionContacto" class="fontNegrita aContactame"
-            >contactarme.
-            <i class="fa-solid fa-arrow-pointer"></i>
-          </a>
-        </p>
-      </div>
-      <div class="divHabilidades">
-        <div class="divTitulosHab">
-          <h2 class="fontNegrita text4x1">Habilidades</h2>
-          <span class="spanText">Mis conocimientos</span>
-        </div>
-        <div class="slider">
-          <div class="slide-track">
-            <div class="slide">
-              <img src="./assets/html.png" alt="" />
-            </div>
-            <div class="slide">
-              <img src="./assets/css.png" alt="" />
-            </div>
-            <div class="slide">
-              <img src="./assets/js.png" alt="" />
-            </div>
-            <div class="slide">
-              <img src="./assets/java.png" alt="" />
-            </div>
-            <div class="slide">
-              <img src="./assets/git.png" alt="" />
-            </div>
-            <div class="slide">
-              <img src="./assets/html.png" alt="" />
-            </div>
-            <div class="slide">
-              <img src="./assets/css.png" alt="" />
-            </div>
-            <div class="slide">
-              <img src="./assets/js.png" alt="" />
-            </div>
-            <div class="slide">
-              <img src="./assets/java.png" alt="" />
-            </div>
-            <div class="slide">
-              <img src="./assets/git.png" alt="" />
-            </div>
-          </div>
 
-          <div class="divCardHab html"></div>
-          <div class="divCardHab css"></div>
-          <div class="divCardHab js"></div>
-          <div class="divCardHab java"></div>
-          <div class="divCardHab git"></div>
-        </div>
-      </div>
-      <div class="divTrayectoria">
-        <div class="divTitulosHab">
-          <h2 class="fontNegrita text4x1">Mi trayectoria.</h2>
-          <span class="spanText">Como estudiante</span>
-        </div>
-        <div class="divEducacion">
-          <h3 class="h3Educacion">
-            <i class="fa-solid fa-graduation-cap"></i>Educación
-          </h3>
-          <div class="divTiempo">
-            <ol>
-              <li>
-                <div class="divLineal">
-                  <i class="fa-regular fa-calendar-check"></i>
-                  <div class="divDecoration2"></div>
-                </div>
-                <p>Bootcamp NUCBA</p>
-                <span>Agosto 2022 - Enero 2023</span>
-                <p>Desarrollo Web Front End</p>
-              </li>
-              <li class="liRight">
-                <div class="divLineal divLinealRight">
-                  <i class="fa-regular fa-calendar-check calendarioRight"></i>
-                  <div class="divDecoration2"></div>
-                </div>
-                <p>Argentina Programa</p>
-                <span>Marzo 2023 - Junio 2023</span>
-                <p>Desarrollo Web Front End</p>
-              </li>
-              <li>
-                <div class="divLineal">
-                  <i class="fa-regular fa-calendar-check"></i>
-                  <div class="divDecoration2"></div>
-                </div>
-                <p>Universidad de La Punta</p>
-                <span>Marzo 2023 - Cursando Online</span>
-                <p>Tecnicatura en Desarrollo de Software</p>
-              </li>
-            </ol>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="sectionProyectos">
-      <div class="divTitulosProyectos">
-        <h2 class="fontNegrita text4x1">Mis Proyectos</h2>
-        <span class="spanText">Algunos de mis proyectos</span>
-      </div>
-      <div class="divContenedorProyectos">
-        <div class="divProyecto">
-          <div class="divTextProyecto">
-            <h3 class="text4x1">Agencia de Viajes</h3>
-            <p class="pProyecto">
-              Permite filtrar por categorias en destinos,renderizacion y funcionalidad de
-              destinos, menu resp y carro a travez de
-              JavaScript.Persiste datos en LocalStorage.
-            </p>
-            <ul class="ulLenguajes">
-              <li class="liLenguaje">HTML</li>
-              <li class="liLenguaje">CSS</li>
-              <li class="liLenguaje">JavaScript</li>
-            </ul>
-            <div class="divEnlacesProyecto">
-              <a
-                href="https://github.com/gabriel-1993/WebHtmlCssJavaScript"
-                target="_blank"
-                ><i class="fa-brands fa-github githubproyect"></i
-              ></a>
-              <a
-                href="https://web-html-css-java-script.vercel.app/"
-                target="_blank"
-                ><i class="fa-solid fa-globe"></i>
-              </a>
-            </div>
-          </div>
-          <img
-            src="./assets/WebViajes.PNG"
-            alt="imagenProyectoViajes"
-            class="imgProyecto"
-          />
-        </div>
-        <div class="divProyecto">
-          <div class="divTextProyecto">
-            <h3 class="text4x1">Calculadora</h3>
-            <p class="pProyecto">
-              Challenge de FrontEnd Mentor:
-              Permite realizar las operaciones matematicas basicas, se puede resetear o borrar un numero mal ingresado.
-              se adapta hasta 320px de ancho.
-            </p>
-            <ul class="ulLenguajes ulProyecto2">
-              <li class="liLenguaje">HTML</li>
-              <li class="liLenguaje">CSS</li>
-              <li class="liLenguaje">JavaScript</li>
-            </ul>
-            <div class="divEnlacesProyecto">
-              <a
-                href="https://github.com/gabriel-1993/FrontendMentor/tree/main/6(calculadora)"
-                target="_blank"
-                ><i class="fa-brands fa-github githubproyect"></i
-              ></a>
-              <a
-                href="https://frontendchallenges-five.vercel.app/6(calculadora)/index.html"
-                target="_blank"
-                ><i class="fa-solid fa-globe"></i>
-              </a>
-            </div>
-          </div>
-          <img
-            src="./assets/calculadora.PNG"
-            alt="imagenProyectoViajes"
-            class="imgProyecto"
-          />
-        </div>
-        <div class="divProyecto">
-          <div class="divTextProyecto">
-            <h3 class="text4x1">To do List</h3>
-            <p class="pProyecto">
-              Permite ingresar tareas pendientes, eliminar de a una tarea o resetear la lista, persiste las tareas en el LocalStorage de modo que
-              al cerrar la app o el navegador quedan guardadas en la memoria de la pc.
-            </p>
-            <ul class="ulLenguajes ulProyecto3">
-              <li class="liLenguaje">HTML</li>
-              <li class="liLenguaje">CSS</li>
-              <li class="liLenguaje">JavaScript</li>
-            </ul>
-            <div class="divEnlacesProyecto">
-              <a
-                href="https://github.com/gabriel-1993/FrontendMentor/tree/main/9(todoList)"
-                target="_blank"
-                ><i class="fa-brands fa-github githubproyect"></i
-              ></a>
-              <a
-                href="https://frontendchallenges-five.vercel.app/9(todoList)/index.html"
-                target="_blank"
-                ><i class="fa-solid fa-globe"></i>
-              </a>
-            </div>
-          </div>
-          <img
-            src="./assets/todolist.PNG"
-            alt="imagenProyectoViajes"
-            class="imgProyecto"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="sectionOtrosProyectos">
-      <div class="divTitulosProyectos">
-        <h2 class="fontNegrita text4x1">Otros proyectos</h2>
-        <span class="spanText">CSS,JS,Java(POO),C++ </span>
-      </div>
-      <div class="divCardsOtrosProyectos">
-     
-        <div class="cardOtroProyecto">
-          <div class="divIconos">
-            <div>
-              <i class="fa-regular fa-folder" ></i>
-            </div>
-            <div class="divEnlacesOtrosProyecto">
-              <a
-                href="https://github.com/gabriel-1993/JavaPoo"
-                target="_blank"
-                ><i class="fa-brands fa-github githubotrosProyectos"></i
-                  ></a>
-            </div>
-          </div>
-          <h3 class="h3OtroProyecto">ULP - Programacion 2</h3>
-          <p class="pCardOtrosProyectos">
-            JAVA -Programacion Orientada a Objetos. Trabajos practicos de la tec.(Programacion 2)</p>
-          <ul class="ulLenguajesOtros">
-            <li class="liLenguajeOtros">Java</li>
-            <li class="liLenguajeOtros">POO</li>
-            <li class="liLenguajeOtros">UML</li>
-          </ul>
-        </div>
-        <div class="cardOtroProyecto">
-          <div class="divIconos">
-            <div>
-              <i class="fa-regular fa-folder" ></i>
-            </div>
-            <div class="divEnlacesOtrosProyecto">
-              <a
-                href="https://github.com/gabriel-1993/LAB1.TPS.ULP"
-                target="_blank"
-                ><i class="fa-brands fa-github githubotrosProyectos"></i
-                  ></a>
-              
-            </div>
-          </div>
-          <h3 class="h3OtroProyecto">ULP - Laboratorio 1</h3>
-          <p class="pCardOtrosProyectos">
-            Java(POO) SQL e Interfaz grafica. Trabajos practicos de la tec.(Laboratorio 1). </p>
-          <ul class="ulLenguajesOtros">
-            <li class="liLenguajeOtros">Java</li>
-            <li class="liLenguajeOtros">UML</li>
-            <li class="liLenguajeOtros">GIU</li>
-          </ul>
-        </div>
-        <div class="cardOtroProyecto">
-          <div class="divIconos">
-            <div>
-              <i class="fa-regular fa-folder" ></i>
-            </div>
-            <div class="divEnlacesOtrosProyecto">
-              <a
-                href="https://github.com/gabriel-1993/EDA.TPS.ULP"
-                target="_blank"
-                ><i class="fa-brands fa-github githubotrosProyectos"></i
-                  ></a>
-            
-            </div>
-          </div>
-          <h3 class="h3OtroProyecto">ULP - EDA </h3>
-          <p class="pCardOtrosProyectos">
-           Estructura de Datos y algoritmos: trabajos practicos en C++ de la tec.(EDA)  </p>
-          <ul class="ulLenguajesOtros">
-            <li class="liLenguajeOtros">C++</li>
-          </ul>
-        </div>
-        <div class="cardOtroProyecto">
-          <div class="divIconos">
-            <div>
-              <i class="fa-regular fa-folder" ></i>
-            </div>
-            <div class="divEnlacesOtrosProyecto">
-              <a
-                href="https://github.com/gabriel-1993/FrontendMentor/tree/main/8"
-                target="_blank"
-                ><i class="fa-brands fa-github githubotrosProyectos"></i
-              ></a>
-              <a
-                href="https://frontendchallenges-five.vercel.app/8/index.html"
-                target="_blank"
-                ><i class="fa-solid fa-globe fa-globeProyectos"></i>
-              </a>
-            </div>
-          </div>
-          <h3 class="h3OtroProyecto">Challenge #1</h3>
-          <p class="pCardOtrosProyectos">
-            Challenge de Front-End Mentor, maquetado responsive para visualizar distintos tipos de notificaciones de una red social.  
-          </p>
-          <ul class="ulLenguajesOtros">
-            <li class="liLenguajeOtros">HTML</li>
-            <li class="liLenguajeOtros">CSS</li>
-          </ul>
-        </div>
-
-        <div class="cardOtroProyecto">
-          <div class="divIconos">
-            <div>
-              <i class="fa-regular fa-folder" ></i>
-            </div>
-            <div class="divEnlacesOtrosProyecto">
-              <a
-                href="https://github.com/gabriel-1993/FrontendMentor/tree/main/7"
-                target="_blank"
-                ><i class="fa-brands fa-github githubotrosProyectos"></i
-              ></a>
-              <a
-                href="https://frontendchallenges-five.vercel.app/7/index.html"
-                target="_blank"
-                ><i class="fa-solid fa-globe fa-globeProyectos"></i>
-              </a>
-            </div>
-          </div>
-          <h3 class="h3OtroProyecto">Challenge #2</h3>
-          <p class="pCardOtrosProyectos">
-            Challenge de Front-End Mentor, aplica Menu Responsive a travez de JS al igual que el efecto difuminado entre otros detalles.
-
-          </p>
-          <ul class="ulLenguajesOtros">
-            <li class="liLenguajeOtros">HTML</li>
-            <li class="liLenguajeOtros">CSS</li>
-            <li class="liLenguajeOtros">JS</li>
-
-          </ul>
-        </div>
-
-        <div class="cardOtroProyecto">
-          <div class="divIconos">
-            <div>
-              <i class="fa-regular fa-folder" ></i>
-            </div>
-            <div class="divEnlacesOtrosProyecto">
-              <a
-                href="https://github.com/gabriel-1993/FrontendMentor/tree/main/4"
-                target="_blank"
-                ><i class="fa-brands fa-github githubotrosProyectos"></i
-                  ></a>
-              <a
-                href="https://frontendchallenges-five.vercel.app/4/index.html"
-                target="_blank"
-                ><i class="fa-solid fa-globe fa-globeProyectos"></i>
-              </a>
-            </div>
-          </div>
-          <h3 class="h3OtroProyecto">Challenge #3</h3>
-          <p class="pCardOtrosProyectos">
-            Challenge de Front-End Mentor.
-            Maquetado en CSS que incluye responsive design con imagenes incluso como fondo y un apartado de texto.
-          </p>
-          <ul class="ulLenguajesOtros">
-            <li class="liLenguajeOtros">HTML</li>
-            <li class="liLenguajeOtros">CSS</li>
-          </ul>
-        </div>
-        </div>
-      </div>
-    </section>  
-    <section id="sectionContacto">
-      <div class="divContactoTexto">
-        <h1 class="h1Contacto">Ahora o nunca!<span class="spanContactame"></h1>
-        <p class="pContacto">Si quieres contactarme conmigo, puedes hacerlo a través de las redes sociales o llenando el formulario de contacto. Te responderé lo antes posible. ¡Gracias! 😊</p>
-      <div class="divEmailCel">
-        <p class="font-bold"><i class="fa-regular fa-envelope"></i>gabrieltorrez9303@gmail.com</p>
-        <p class="font-bold"> <i class="fa-solid fa-square-phone fa-sq-ph2"></i> 2664325477</p>
-      </div>
-      </div>
-      <div class="divContactoForm">
-       
-          <form id="form" action="https://formspree.io/f/xdorkpyq"
-          method="POST">
-            <!-- form de contacto -->
-            <div>
-              <input class=" contacto-datos input-nombre"  type="name" name="name" id="name" 
-              placeholder = 'Nombre completo'" placeholder="Ingrese
-              nombre completo">
-            </div>
-            <div>
-              <input class="contacto-datos input-correo" name="correo" id="correo"
-              type="text" placeholder = 'E-mail'"
-              placeholder="E-mail">
-            </div>
-            <div class=>
-              <input class="contacto-datos input-asunto" name="asunto" id="asunto"
-              type="text" placeholder = 'Asunto'"
-              placeholder="Asunto">
-            </div>
-            <div><textarea placeholder = 'Ingrese su mensaje aquí'"
-              placeholder="Ingrese su mensaje aquí" class="contacto-datos" name="message"></textarea></div>   
-            <div class="divSubmit">
-          
-            
-              <input type="submit" value="Enviar" class="submit-contacto btn"/>
-
-          </div>
-          </form>
-          <a href="mailto:gabrieltorrez9303@gmail.com" id="emailJS">mail</a>
-      </div>
-    </section>
-    <a href="#header">    <i class="fa-solid fa-chevron-up fa-bounce"></i>
-    </a>
-
-    <footer>
-      <h2>Gracias por visitar mi sitio web!  😊</h2>
-      <a class="aFooter" href="#sectionContacto">
-        Contáctame
-      </a>
-      <p>O también me puedes contactar a través de:</p>
-      <ul class="ulBtnsContactoFooter">
+    </div>
+  </header>
+  <section id="sectionHero">
+    <div class="divUlBtns">
+      <ul class="ulBtnsContacto">
         <li>
-          <a href="https://github.com/gabriel-1993" target="_blank"
-            ><i class="fa-brands fa-github"></i
-          ></a>
+          <a href="https://github.com/gabriel-1993" target="_blank"><i class="fa-brands fa-github"></i></a>
         </li>
         <li>
-          <a
-            href="https://www.linkedin.com/in/gabriel-torrez-330273238"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/gabriel-torrez-330273238" target="_blank">
             <i class="fa-brands fa-linkedin"></i>
           </a>
         </li>
@@ -541,9 +58,453 @@
             <i class="fa-solid fa-square-phone"></i>
           </a>
         </li>
+        <div class="divDecoration"></div>
       </ul>
-      <p class="font-bold font-boldFooter">Hecho con ❤️ por Gabriel Torrez.</p>
-    </footer>
-    <script src="./index.js"></script>
-  </body>
+    </div>
+    <div class="contenedorHero">
+
+      <div class="divTitulo">
+        <span class="spanTitulo"> Hola!👋👋, soy</span>
+        <h1 class="h1Titulo">Gabriel Torrez.</h1>
+        <span class="spanTitulo spanTitulo2">Estudiante de Programación.</span>
+        <div class="divBtnsHero">
+          <a class="aHero" href="#sectionContacto">
+            <img src="./assets/contactame.png" alt="logoContactame" class="contactameLogo" />
+            Contáctame
+          </a>
+          <a class="aHero">
+            <img src="./assets/descargar.png" alt="logoDescargarCv" class="descargarCv" />
+            Descargar CV
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section id="sectionSobreMi">
+    <div class="divTitulos">
+      <h2 class="fontNegrita text4x1">Sobre mí</h2>
+      <span class="spanText">Quién soy</span>
+    </div>
+    <div class="divDown">
+      <p class="pSobreMi">
+        <span class="fontNegrita">Desarrollador Front-End y estudiante </span>, apasionado por el aprendizaje de este
+        increible oficio. Me encanta
+        crear sitios web que brinden una experiencia de usuario única y
+        satisfactoria. Soy estudiante de la Universidad de La Punta, estoy
+        cursando la Tec.Desarrollo de Software, soy una persona responsable y
+        comprometida con mi trabajo. Constantemente estoy aprendiendo nuevas
+        tecnologías y herramientas para mejorar mis habilidades. Si tiene
+        alguna pregunta o algun comentario no dude en
+        <a href="#sectionContacto" class="fontNegrita aContactame">contactarme.
+          <i class="fa-solid fa-arrow-pointer"></i>
+        </a>
+      </p>
+    </div>
+    <div class="divHabilidades">
+      <div class="divTitulosHab">
+        <h2 class="fontNegrita text4x1">Habilidades</h2>
+        <span class="spanText">Mis conocimientos</span>
+      </div>
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img src="./assets/html.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./assets/css.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./assets/js.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./assets/java.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./assets/git.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./assets/html.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./assets/css.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./assets/js.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./assets/java.png" alt="" />
+          </div>
+          <div class="slide">
+            <img src="./assets/git.png" alt="" />
+          </div>
+        </div>
+
+        <div class="divCardHab html"></div>
+        <div class="divCardHab css"></div>
+        <div class="divCardHab js"></div>
+        <div class="divCardHab java"></div>
+        <div class="divCardHab git"></div>
+      </div>
+    </div>
+    <div class="divTrayectoria">
+      <div class="divTitulosHab">
+        <h2 class="fontNegrita text4x1">Mi trayectoria.</h2>
+        <span class="spanText">Como estudiante</span>
+      </div>
+      <div class="divEducacion">
+        <h3 class="h3Educacion">
+          <i class="fa-solid fa-graduation-cap"></i>Educación
+        </h3>
+        <div class="divTiempo">
+          <ol>
+            <li>
+              <div class="divLineal">
+                <i class="fa-regular fa-calendar-check"></i>
+                <div class="divDecoration2"></div>
+              </div>
+              <p>Bootcamp NUCBA</p>
+              <span>Agosto 2022 - Enero 2023</span>
+              <p>Desarrollo Web Front End</p>
+            </li>
+            <li class="liRight">
+              <div class="divLineal divLinealRight">
+                <i class="fa-regular fa-calendar-check calendarioRight"></i>
+                <div class="divDecoration2"></div>
+              </div>
+              <p>Argentina Programa</p>
+              <span>Marzo 2023 - Junio 2023</span>
+              <p>Desarrollo Web Front End</p>
+            </li>
+            <li>
+              <div class="divLineal">
+                <i class="fa-regular fa-calendar-check"></i>
+                <div class="divDecoration2"></div>
+              </div>
+              <p>Universidad de La Punta</p>
+              <span>Marzo 2023 - Cursando Online</span>
+              <p>Tecnicatura en Desarrollo de Software</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="sectionProyectos">
+    <div class="divTitulosProyectos">
+      <h2 class="fontNegrita text4x1">Mis Proyectos</h2>
+      <span class="spanText">Algunos de mis proyectos</span>
+    </div>
+    <div class="divContenedorProyectos">
+      <div class="divProyecto">
+        <div class="divTextProyecto">
+          <h3 class="text4x1">WEB 1 </h3>
+          <p class="pProyecto">
+            Trabajo practico integrador de WEB 1, pagina web responsive con varios ejemplos de lo que podemos aplicar
+            con JavaScript.
+            Agregando animaciones, validaciones de formularios, interacción, etc. El enlace "Mas funciones" contiene
+            varios ejemplos.
+
+          </p>
+          <ul class="ulLenguajes">
+            <li class="liLenguaje">HTML</li>
+            <li class="liLenguaje">CSS</li>
+            <li class="liLenguaje">JS</li>
+          </ul>
+          <div class="divEnlacesProyecto">
+            <a href="https://github.com/gabriel-1993/TPINTEGRADOR_WEB1" target="_blank"><i
+                class="fa-brands fa-github githubproyect"></i></a>
+            <a href="https://gabriel-1993.github.io/TPINTEGRADOR_WEB1/" target="_blank"><i class="fa-solid fa-globe"></i>
+            </a>
+
+          </div>
+        </div>
+        <img src="./assets/integradorJsULP.PNG" alt="imagenIntegradorJs" class="imgProyecto" />
+      </div>
+      <div class="divProyecto">
+        <div class="divTextProyecto">
+          <h3 class="text4x1">Programa Bomberos </h3>
+          <p class="pProyecto">
+            LABORATORIO I - Trabajo integrador en grupo. Programa de tres capas(Front, logica y datos) para gestionar
+            Cuarteles de Bomberos: permitiendo agregar, eliminar, mostrar y modificar datos (CRUD).
+
+
+          </p>
+          <ul class="ulLenguajes">
+            <li class="liLenguaje">JAVA</li>
+            <li class="liLenguaje">POO</li>
+            <li class="liLenguaje">GIU</li>
+            <li class="liLenguaje">SQL</li>
+          </ul>
+          <div class="divEnlacesProyecto">
+            <a href="https://github.com/julianrios23/ProyectoFinal_TecnicaturaUniversitariaProgramacion_SanLuis" target="_blank"><i
+                class="fa-brands fa-github githubproyect"></i></a>
+
+          </div>
+        </div>
+        <img src="./assets/bomberos.jpeg" alt="imagenProgramaBomberos" class="imgProyecto" />
+      </div>
+
+      <div class="divProyecto">
+        <div class="divTextProyecto">
+          <h3 class="text4x1">Agencia de Viajes</h3>
+          <p class="pProyecto">
+            Permite filtrar por categorias en destinos,renderizacion y funcionalidad de
+            destinos, menu resp y carro a travez de
+            JavaScript.Persiste datos en LocalStorage.
+          </p>
+          <ul class="ulLenguajes">
+            <li class="liLenguaje">HTML</li>
+            <li class="liLenguaje">CSS</li>
+            <li class="liLenguaje">JavaScript</li>
+          </ul>
+          <div class="divEnlacesProyecto">
+            <a href="https://github.com/gabriel-1993/WebHtmlCssJavaScript" target="_blank"><i
+                class="fa-brands fa-github githubproyect"></i></a>
+            <a href="https://web-html-css-java-script.vercel.app/" target="_blank"><i class="fa-solid fa-globe"></i>
+            </a>
+          </div>
+        </div>
+        <img src="./assets/WebViajes.PNG" alt="imagenProyectoViajes" class="imgProyecto" />
+      </div>
+      
+      <div class="divProyecto">
+        <div class="divTextProyecto">
+          <h3 class="text4x1">To do List</h3>
+          <p class="pProyecto">
+            Permite ingresar tareas pendientes, eliminar de a una tarea o resetear la lista, persiste las tareas en el
+            LocalStorage de modo que
+            al cerrar la app o el navegador quedan guardadas en la memoria de la pc.
+          </p>
+          <ul class="ulLenguajes ulProyecto3">
+            <li class="liLenguaje">HTML</li>
+            <li class="liLenguaje">CSS</li>
+            <li class="liLenguaje">JavaScript</li>
+          </ul>
+          <div class="divEnlacesProyecto">
+            <a href="https://github.com/gabriel-1993/FrontendMentor/tree/main/9(todoList)" target="_blank"><i
+                class="fa-brands fa-github githubproyect"></i></a>
+            <a href="https://frontendchallenges-five.vercel.app/9(todoList)/index.html" target="_blank"><i
+                class="fa-solid fa-globe"></i>
+            </a>
+          </div>
+        </div>
+        <img src="./assets/todolist.PNG" alt="imagenProyectoViajes" class="imgProyecto" />
+      </div>
+    </div>
+  </section>
+  <section id="sectionOtrosProyectos">
+    <div class="divTitulosProyectos">
+      <h2 class="fontNegrita text4x1">Otros proyectos</h2>
+      <span class="spanText">CSS,JS,Java(POO),C++ </span>
+    </div>
+    <div class="divCardsOtrosProyectos">
+
+      <div class="cardOtroProyecto">
+        <div class="divIconos">
+          <div>
+            <i class="fa-regular fa-folder"></i>
+          </div>
+          <div class="divEnlacesOtrosProyecto">
+            <a href="https://github.com/gabriel-1993/JavaPoo" target="_blank"><i
+                class="fa-brands fa-github githubotrosProyectos"></i></a>
+          </div>
+        </div>
+        <h3 class="h3OtroProyecto"> Programacion 2</h3>
+        <p class="pCardOtrosProyectos">
+          JAVA -Programacion Orientada a Objetos. Trabajos practicos ULP.</p>
+        <ul class="ulLenguajesOtros">
+          <li class="liLenguajeOtros">Java</li>
+          <li class="liLenguajeOtros">POO</li>
+          <li class="liLenguajeOtros">UML</li>
+        </ul>
+      </div>
+      <div class="cardOtroProyecto">
+        <div class="divIconos">
+          <div>
+            <i class="fa-regular fa-folder"></i>
+          </div>
+          <div class="divEnlacesOtrosProyecto">
+            <a href="https://github.com/gabriel-1993/LAB1.TPS.ULP" target="_blank"><i
+                class="fa-brands fa-github githubotrosProyectos"></i></a>
+
+          </div>
+        </div>
+        <h3 class="h3OtroProyecto">Laboratorio 1</h3>
+        <p class="pCardOtrosProyectos">
+          Java(POO) SQL e Interfaz grafica. Trabajos practicos ULP. </p>
+        <ul class="ulLenguajesOtros">
+          <li class="liLenguajeOtros">Java</li>
+          <li class="liLenguajeOtros">UML</li>
+          <li class="liLenguajeOtros">GIU</li>
+        </ul>
+      </div>
+      <div class="cardOtroProyecto">
+        <div class="divIconos">
+          <div>
+            <i class="fa-regular fa-folder"></i>
+          </div>
+          <div class="divEnlacesOtrosProyecto">
+            <a href="https://github.com/gabriel-1993/FrontendMentor/tree/main/6(calculadora)" target="_blank"><i
+                class="fa-brands fa-github githubotrosProyectos"></i></a>
+            <a href="https://frontendchallenges-five.vercel.app/6(calculadora)/index.html" target="_blank"><i
+                class="fa-solid fa-globe"></i>
+            </a>
+
+          </div>
+        </div>
+        <h3 class="h3OtroProyecto">Calculadora</h3>
+        <p class="pCardOtrosProyectos">
+          Permite realizar las operaciones matematicas basicas, se puede resetear o borrar
+          un numero mal ingresado. Se adapta hasta 320px de ancho. </p>
+        <ul class="ulLenguajesOtros">
+          <li class="liLenguajeOtros">HTML</li>
+          <li class="liLenguajeOtros">CCS</li>
+          <li class="liLenguajeOtros">JS</li>
+        </ul>
+      </div>
+      <div class="cardOtroProyecto">
+        <div class="divIconos">
+          <div>
+            <i class="fa-regular fa-folder"></i>
+          </div>
+          <div class="divEnlacesOtrosProyecto">
+            <a href="https://github.com/gabriel-1993/FrontendMentor/tree/main/8" target="_blank"><i
+                class="fa-brands fa-github githubotrosProyectos"></i></a>
+            <a href="https://frontendchallenges-five.vercel.app/8/index.html" target="_blank"><i
+                class="fa-solid fa-globe fa-globeProyectos"></i>
+            </a>
+          </div>
+        </div>
+        <h3 class="h3OtroProyecto">Challenge #1</h3>
+        <p class="pCardOtrosProyectos">
+          Challenge de Front-End Mentor, maquetado responsive para visualizar distintos tipos de notificaciones de una
+          red social.
+        </p>
+        <ul class="ulLenguajesOtros">
+          <li class="liLenguajeOtros">HTML</li>
+          <li class="liLenguajeOtros">CSS</li>
+        </ul>
+      </div>
+
+      <div class="cardOtroProyecto">
+        <div class="divIconos">
+          <div>
+            <i class="fa-regular fa-folder"></i>
+          </div>
+          <div class="divEnlacesOtrosProyecto">
+            <a href="https://github.com/gabriel-1993/FrontendMentor/tree/main/7" target="_blank"><i
+                class="fa-brands fa-github githubotrosProyectos"></i></a>
+            <a href="https://frontendchallenges-five.vercel.app/7/index.html" target="_blank"><i
+                class="fa-solid fa-globe fa-globeProyectos"></i>
+            </a>
+          </div>
+        </div>
+        <h3 class="h3OtroProyecto">Challenge #2</h3>
+        <p class="pCardOtrosProyectos">
+          Challenge de Front-End Mentor, aplica Menu Responsive a travez de JS al igual que el efecto difuminado entre
+          otros detalles.
+
+        </p>
+        <ul class="ulLenguajesOtros">
+          <li class="liLenguajeOtros">HTML</li>
+          <li class="liLenguajeOtros">CSS</li>
+          <li class="liLenguajeOtros">JS</li>
+
+        </ul>
+      </div>
+
+      <div class="cardOtroProyecto">
+        <div class="divIconos">
+          <div>
+            <i class="fa-regular fa-folder"></i>
+          </div>
+          <div class="divEnlacesOtrosProyecto">
+            <a href="https://github.com/gabriel-1993/FrontendMentor/tree/main/4" target="_blank"><i
+                class="fa-brands fa-github githubotrosProyectos"></i></a>
+            <a href="https://frontendchallenges-five.vercel.app/4/index.html" target="_blank"><i
+                class="fa-solid fa-globe fa-globeProyectos"></i>
+            </a>
+          </div>
+        </div>
+        <h3 class="h3OtroProyecto">Challenge #3</h3>
+        <p class="pCardOtrosProyectos">
+          Challenge de Front-End Mentor.
+          Maquetado en CSS que incluye responsive design con imagenes incluso como fondo y un apartado de texto.
+        </p>
+        <ul class="ulLenguajesOtros">
+          <li class="liLenguajeOtros">HTML</li>
+          <li class="liLenguajeOtros">CSS</li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section id="sectionContacto">
+    <div class="divContactoTexto">
+      <h1 class="h1Contacto">Ahora o nunca!<span class="spanContactame"></h1>
+      <p class="pContacto">Si quieres contactarme conmigo, puedes hacerlo a través de las redes sociales o llenando el
+        formulario de contacto. Te responderé lo antes posible. ¡Gracias! 😊</p>
+      <div class="divEmailCel">
+        <p class="font-bold"><i class="fa-regular fa-envelope"></i>gabrieltorrez9303@gmail.com</p>
+        <p class="font-bold"> <i class="fa-solid fa-square-phone fa-sq-ph2"></i> 2664325477</p>
+      </div>
+    </div>
+    <div class="divContactoForm">
+
+      <form id="form" action="https://formspree.io/f/xdorkpyq" method="POST">
+        <!-- form de contacto -->
+        <div>
+          <input class=" contacto-datos input-nombre" type="name" name="name" id="name"
+            placeholder='Nombre completo'" placeholder=" Ingrese nombre completo">
+        </div>
+        <div>
+          <input class="contacto-datos input-correo" name="correo" id="correo" type="text" placeholder='E-mail'"
+              placeholder=" E-mail">
+        </div>
+        <div class=>
+          <input class="contacto-datos input-asunto" name="asunto" id="asunto" type="text" placeholder='Asunto'"
+              placeholder=" Asunto">
+        </div>
+        <div><textarea placeholder='Ingrese su mensaje aquí'"
+              placeholder=" Ingrese su mensaje aquí" class="contacto-datos" name="message"></textarea></div>
+        <div class="divSubmit">
+
+
+          <input type="submit" value="Enviar" class="submit-contacto btn" />
+
+        </div>
+      </form>
+      <a href="mailto:gabrieltorrez9303@gmail.com" id="emailJS">mail</a>
+    </div>
+  </section>
+  <a href="#header"> <i class="fa-solid fa-chevron-up fa-bounce"></i>
+  </a>
+
+  <footer>
+    <h2>Gracias por visitar mi sitio web! 😊</h2>
+    <a class="aFooter" href="#sectionContacto">
+      Contáctame
+    </a>
+    <p>O también me puedes contactar a través de:</p>
+    <ul class="ulBtnsContactoFooter">
+      <li>
+        <a href="https://github.com/gabriel-1993" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/gabriel-torrez-330273238" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#sectionContacto">
+          <i class="fa-solid fa-square-phone"></i>
+        </a>
+      </li>
+    </ul>
+    <p class="font-bold font-boldFooter">Hecho con ❤️ por Gabriel Torrez.</p>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+
 </html>
