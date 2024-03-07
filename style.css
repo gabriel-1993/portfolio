@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 
 :root {
-  --background: hsl(225, 6%, 13%);
+  --background: #1f2023;
   --bg-buttons: rgb(95, 73, 131);
   --text-buttons: #f8faff;
   --socials-buttons: rgb(168, 172, 179);
@@ -45,6 +45,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0px 30px;
+  
 }
 /*div con Gaby y iconos resp lado izquierdo*/
 .divLeft {
@@ -532,6 +533,10 @@ section {
   border: 0.1px solid #e5e7eb1e;
   box-shadow: 10px 10px 20px hsl(225, 7%, 11%);
   border-radius: 5px;
+  cursor: pointer;
+}
+.cardOtroProyecto:hover{
+  background-color: #acadaf41;
 }
 .divIconos {
   display: flex;
