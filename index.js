@@ -144,7 +144,10 @@ const cssClaroOscuro = () => {
   }
 
   if (modoClaro) {
+
     // Capturar elementos a modificar color
+    let iconoHamburguesa = document.querySelector(".fa-bars");
+    let fondoMenuResponsive = document.querySelector(".navbar-list");
     let gaby = document.querySelector(".gaby");
     let enlaces = document.querySelectorAll(".navbar-link");
     let colorDeFondo = document.body;
@@ -157,11 +160,14 @@ const cssClaroOscuro = () => {
     let fontsNegritas = document.querySelectorAll(".fontNegrita");
     let spansTexts = document.querySelectorAll(".spanText");
     let pSobreMi = document.querySelector(".pSobreMi");
+    let iconoEducacion = document.querySelector(".fa-graduation-cap");
     let h3Educacion = document.querySelector(".h3Educacion");
     let logosCalendarios = document.querySelectorAll(".fa-calendar-check");
     let pEducacionStrong = document.querySelectorAll(".pClaroOscuro");
     let spansEducacion = document.querySelectorAll(".spanClaroOscuro");
     let texts4x1 = document.querySelectorAll(".text4x1");
+    let divsProyectos = document.querySelectorAll(".divProyecto");
+    let pProyecto = document.querySelectorAll(".pProyecto");
     let logosGitHubProyectos = document.querySelectorAll(".githubproyect");
     let logosGitHubOtrosProyectos = document.querySelectorAll(".githubotrosProyectos");
     let logosVercelProyectos = document.querySelectorAll(".fa-globe");
@@ -181,6 +187,10 @@ const cssClaroOscuro = () => {
 
 
     // Modificar colores
+    iconoHamburguesa.style.color ="#1f2023";
+
+    fondoMenuResponsive.style.backgroundColor="#1f202329";
+
     gaby.style.color = "#1f2023";
 
     enlaces.forEach(enlace => {
@@ -211,6 +221,8 @@ const cssClaroOscuro = () => {
 
     pSobreMi.style.color = "#1f2023";
 
+    iconoEducacion.style.color="#000";
+
     h3Educacion.style.color = "#000";
 
     logosCalendarios.forEach(enlace => {
@@ -228,6 +240,15 @@ const cssClaroOscuro = () => {
     texts4x1.forEach(enlace => {
       enlace.style.color = "#000";
     });
+
+    divsProyectos.forEach(elemento =>{
+      elemento.style.borderColor="#5f4983";
+    })  
+
+    pProyecto.forEach(elemento =>{
+      elemento.style.backgroundColor="#5f4983";
+      elemento.style.color="#1f2023";
+    })  
 
     logosGitHubProyectos.forEach(enlace => {
       enlace.style.color = "#000";
@@ -318,12 +339,12 @@ const cssClaroOscuro = () => {
 
     pFooter.style.color = "#000";
 
-    iconosFooter.forEach(elemento =>{
-      elemento.style.color="#636363";
+    iconosFooter.forEach(elemento => {
+      elemento.style.color = "#636363";
     })
 
-     //Hover para iconos del footer
-     iconosFooter.forEach(elemento => {
+    //Hover para iconos del footer
+    iconosFooter.forEach(elemento => {
       // Agrega el efecto al pasar el mouse sobre el elemento
       elemento.addEventListener('mouseover', () => {
         elemento.style.color = "#5f4983";
@@ -337,6 +358,7 @@ const cssClaroOscuro = () => {
   } else {
     // Elimina los estilos del modo claro y restaura los estilos oscuros por defecto
     // Capturar elementos a modificar color
+    let iconoHamburguesa = document.querySelector(".fa-bars");
     let gaby = document.querySelector(".gaby");
     let enlaces = document.querySelectorAll(".navbar-link");
     let colorDeFondo = document.body;
@@ -349,11 +371,14 @@ const cssClaroOscuro = () => {
     let fontsNegritas = document.querySelectorAll(".fontNegrita");
     let spansTexts = document.querySelectorAll(".spanText");
     let pSobreMi = document.querySelector(".pSobreMi");
+    let iconoEducacion = document.querySelector(".fa-graduation-cap");
     let h3Educacion = document.querySelector(".h3Educacion");
     let logosCalendarios = document.querySelectorAll(".fa-calendar-check");
     let pEducacionStrong = document.querySelectorAll(".pClaroOscuro");
     let spansEducacion = document.querySelectorAll(".spanClaroOscuro");
     let texts4x1 = document.querySelectorAll(".text4x1");
+    let divsProyectos = document.querySelectorAll(".divProyecto");
+    let pProyecto = document.querySelectorAll(".pProyecto");
     let logosGitHubProyectos = document.querySelectorAll(".githubproyect");
     let logosGitHubOtrosProyectos = document.querySelectorAll(".githubotrosProyectos");
     let logosVercelProyectos = document.querySelectorAll(".fa-globe");
@@ -371,6 +396,7 @@ const cssClaroOscuro = () => {
     let iconosFooter = document.querySelectorAll(".iconoFooter");
 
 
+    iconoHamburguesa.style.color = "";
 
     gaby.style.color = "";
 
@@ -402,6 +428,8 @@ const cssClaroOscuro = () => {
 
     pSobreMi.style.color = "";
 
+    iconoEducacion.style.color="";
+
     h3Educacion.style.color = "";
 
     logosCalendarios.forEach(enlace => {
@@ -411,6 +439,7 @@ const cssClaroOscuro = () => {
     pEducacionStrong.forEach(enlace => {
       enlace.style.color = "";
     });
+
     spansEducacion.forEach(enlace => {
       enlace.style.color = "";
     });
@@ -419,10 +448,19 @@ const cssClaroOscuro = () => {
       enlace.style.color = "";
     });
 
+    divsProyectos.forEach(elemento =>{
+      elemento.style.borderColor="";
+    })  
+
+    pProyecto.forEach(elemento =>{
+      elemento.style.backgroundColor="";
+      elemento.style.color="";
+    }) 
+
     logosGitHubProyectos.forEach(enlace => {
       enlace.style.color = "";
     });
-    
+
     logosVercelProyectos.forEach(enlace => {
       enlace.style.color = "";
     });
@@ -442,8 +480,8 @@ const cssClaroOscuro = () => {
     pOtrosProyectos.forEach(enlace => {
       enlace.style.color = "";
     });
-  
-  
+
+
     h1Contacto.style.color = "";
 
     pContacto.style.color = "";
@@ -464,13 +502,13 @@ const cssClaroOscuro = () => {
 
     pFooter.style.color = "";
 
-    iconosFooter.forEach(elemento =>{
-      elemento.style.color="";
+    iconosFooter.forEach(elemento => {
+      elemento.style.color = "";
     })
 
   }
 
- 
+
 
 }
 
