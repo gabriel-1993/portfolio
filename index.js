@@ -189,12 +189,12 @@ const cssClaroOscuro = () => {
     // Modificar colores
     iconoHamburguesa.style.color ="#1f2023";
 
-    fondoMenuResponsive.style.backgroundColor="#1f202329";
+    fondoMenuResponsive.style.backgroundColor="#fff";
 
     gaby.style.color = "#1f2023";
 
     enlaces.forEach(enlace => {
-      enlace.style.color = "#1f2023";
+      enlace.style.color = "#000";
     });
 
     colorDeFondo.style.backgroundColor = "#fff";
@@ -359,6 +359,7 @@ const cssClaroOscuro = () => {
     // Elimina los estilos del modo claro y restaura los estilos oscuros por defecto
     // Capturar elementos a modificar color
     let iconoHamburguesa = document.querySelector(".fa-bars");
+    let fondoMenuResponsive = document.querySelector(".navbar-list");
     let gaby = document.querySelector(".gaby");
     let enlaces = document.querySelectorAll(".navbar-link");
     let colorDeFondo = document.body;
@@ -397,6 +398,8 @@ const cssClaroOscuro = () => {
 
 
     iconoHamburguesa.style.color = "";
+
+    fondoMenuResponsive.style.backgroundColor="";
 
     gaby.style.color = "";
 
